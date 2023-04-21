@@ -1,0 +1,28 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+<section>
+  
+  <% if (user) { %>
+<h1><%= user.profile.name %>'s Account</h1>
+<h1>My collection</h1>
+<form action="/games" method="POST"></form>
+<label>
+  Name:
+  <input type="text" name="name" autocomplete="off">
+</label>
+<button type="submit">Add 🎮</button>
+
+<% } %>
+<h1>All games:</h1>
+
+<table id="list">
+  <% games.forEach(game => { %>
+  <tr>
+    🎮
+    <th><a href="/games/<%= game._id %>"><%= game.name %></a></th>
+  </tr>
+  <% }) %>
+</table>
+</section>
+
+<%- include('../partials/footer') %>
