@@ -10,8 +10,8 @@ function newGame(req, res) {
 }
 
 function create(req, res) {
-  req.body.owner = req.user.profile._id
-  req.body.completed = !!req.body.completed
+  // req.body.owner = req.user.profile._id
+  // req.body.completed = !!req.body.completed
   for (let key in req.body) {
     if (req.body[key] === '') delete req.body[key]
   }
@@ -27,7 +27,7 @@ function create(req, res) {
 
 function index(req, res) {
   Game.find({})
-  .populate('owner')
+  // .populate('owner')
   .then(games => {
     console.log(games);
     res.render('games/index', {
@@ -43,7 +43,7 @@ function index(req, res) {
 
 function show(req, res) {
   Game.findById(req.params.gameId)
-  .populate('owner')
+  // .populate('owner')
   .then(game => {
     res.render('games/show', {
       game: game,

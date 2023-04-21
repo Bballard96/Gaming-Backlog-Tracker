@@ -12,7 +12,8 @@ router.get('/:gameId', gamesCtrl.show)
 
 router.get('/:gameId/edit', gamesCtrl.edit)
 
-router.post('/',  isLoggedIn, gamesCtrl.create)
+// had an isLoggedIn here in middle
+router.post('/', gamesCtrl.create)
 
 router.post('/:gameId/comments', gamesCtrl.createReview)
 
