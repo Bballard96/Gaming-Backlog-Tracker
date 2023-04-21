@@ -3,17 +3,19 @@
 <section>
   
   <% if (user) { %>
+    <div class ="nav-text">
 <h1><%= user.profile.name %>'s Account</h1>
 <h1>My collection</h1>
 <form action="/games" method="POST"></form>
-<label>
+<!-- <label>
   Name:
   <input type="text" name="name" autocomplete="off">
 </label>
-<button type="submit">Add 🎮</button>
+<button type="submit">Add 🎮</button> -->
+</div>
 
   <% } %>
-  
+
 </section>
 <main>
 <h1>Game List:</h1>

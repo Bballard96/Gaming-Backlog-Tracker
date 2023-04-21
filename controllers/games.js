@@ -10,14 +10,14 @@ function newGame(req, res) {
 }
 
 function create(req, res) {
-  // req.body.owner = req.user.profile._id
-  // req.body.completed = !!req.body.completed
+  req.body.owner = req.user.profile._id
+  req.body.completed = !!req.body.completed
   for (let key in req.body) {
     if (req.body[key] === '') delete req.body[key]
   }
   Game.create(req.body)
   .then(game => {
-    res.redirect(`/games/`)
+    res.redirect(`/games`)
   })
   .catch(err => {
     console.log(err)

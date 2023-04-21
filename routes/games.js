@@ -12,7 +12,7 @@ router.get('/:gameId', gamesCtrl.show)
 
 router.get('/:gameId/edit', gamesCtrl.edit)
 
-router.post('/', isLoggedIn, gamesCtrl.create)
+router.post('/',  isLoggedIn, gamesCtrl.create)
 
 router.post('/:gameId/comments', gamesCtrl.createReview)
 

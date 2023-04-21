@@ -14,9 +14,16 @@
     <label for="hours-played-input">Hours played:</label>
     <input type="text" name="hoursPlayed" id="hours-played-input">
 
-    <label for="completed-checkbox">Completed:</label>
-    <input type="checkbox" name="completed" id="completed-checkbox" checked>
-    
+    <!-- <label for="completed-checkbox">Completed:</label>
+    <input type="checkbox" name="completed" id="completed-checkbox" checked> -->
+    <label for="completed:checkbox">Completed:</label>
+    <input 
+      type="checkbox"
+      name="completed"
+      id="completed:checkbox"
+      <%= game.completed ? "checked" : "" %>
+    >
+
     <button type="submit">Save changes to game</button>
   </form>
 </main>

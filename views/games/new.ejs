@@ -3,21 +3,22 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>Add Game</h1>
+  <h1><%= title %></h1>
   <form id="new-form" action="/games" method="POST">
     <label for="title-input">Title:</label>
     <input type="text" name="title" id="title-input">
     <label for="hours-played-input">Hours played:</label>
     <input type="text" name="hoursPlayed" id="hours-played-input">
-    <label for="mpaa-rating-select">MPAA Rating:</label>
-    <select name="mpaaRating" id="mpaa-rating-select">
-      <option value="G">G</option>
-      <option value="PG">PG</option>
-      <option value="PG-13">PG-13</option>
-      <option value="R">R</option>
-    </select>
+    
+    <!-- <select name="completed" id="completed-checkbox">
+    </select> -->
+    <label for="content-textarea">Comments:</label>
+    <textarea name="content" id="content-textarea"></textarea>
     <label for="completed-checkbox">Completed:</label>
     <input type="checkbox" name="completed" id="completed-checkbox" checked>
+
+    <!-- <label for="completed-checkbox">Completed:</label>
+    <input type="checkbox" name="completed" id="completed-checkbox" checked> -->
     <button type="submit">Add Game</button>
   </form>
 </main>
