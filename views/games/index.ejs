@@ -12,17 +12,33 @@
 </label>
 <button type="submit">Add 🎮</button>
 
-<% } %>
-<h1>All games:</h1>
+  <% } %>
+  
+</section>
+<main>
+<h1>Game List:</h1>
 
 <table id="list">
+  <thead>
+    <tr>
+      <th>Title:</th>
+    </tr>
+  </thead>
+  <tbody>
   <% games.forEach(game => { %>
   <tr>
     🎮
-    <th><a href="/games/<%= game._id %>"><%= game.name %></a></th>
-  </tr>
+    <td><%= game.title %></td>
+    <td><a href="/games/<%= game._id %>">Details</a></td>
+    <td>
+    <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+    <button type="submit">X</button>
+    </form>
+    </td>
+    </tr>
   <% }) %>
+  </tbody>
 </table>
-</section>
+</main>
 
 <%- include('../partials/footer') %>

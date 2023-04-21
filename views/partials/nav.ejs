@@ -4,8 +4,17 @@
 </head>
 <body>
   <nav>
-    <a href="/games">🎮 My collection</a>
-  <a href="/profiles">🧐</a>
+    <a 
+    href="/games" class=<%= title === 'All gamess' ? 'active' : '' %>
+  >
+    🎮 My collection
+  </a>
+  <a 
+  href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
+>
+  ADD GAME
+</a>
+
     <% if (user) { %>
       <a href="/auth/logout" class="right">
         <button type="submit">Logout</button>

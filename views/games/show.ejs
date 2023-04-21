@@ -1,26 +1,25 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/games/show.css" />
 <%- include('../partials/nav') %>
 
-<section>
-  <p>From the kitchen of <%= taco.owner.name %>...</p>
-  <img src="<%= taco.owner.avatar %>" alt="<%= taco.owner.name %>'s avatar">
-  <h1><%= taco.name %></h1>
-  <h2>This taco is <%= taco.tasty ? 'tasty! 😋' : 'not tasty! 😫' %></h2>
-  <% if (user) { %>
-    <form 
-      action="/tacos/<%= taco._id %>/flip-tasty?_method=PATCH"
-      method="POST"
-    >
-      <button class="btn" type="submit">
-        Make taco <%= taco.tasty ? 'not tasty 🌮🥺' : 'tasty 🌮🎉' %>
-      </button>
-    </form>
-  <% } %>
-  <% if (taco.owner.equals(user?.profile._id)) { %>
-    <a href="/tacos/<%= taco._id %>/edit">
-      <button class="btn">Edit this taco!</button>
-    </a>
-  <% } %>
-</section>
+<main>
+  <h1><%= title %></h1>
+  <section>
+    <div><Title></Title>:</div>
+    <div>
+      <%= game.title %>
+      <a href="/games/<%= game._id %>/edit">
+        <button>Edit game</button>
+      </a>
+    </div>
+    <div>airport </div>
+    <div><%= game.hoursPlayed %></div>
+    <div>completed: </div>
+    <div><%= game.completed %></div>
 
+    <!-- <option value=""></option> -->
+  </section>
+
+</main>
+  
 <%- include('../partials/footer') %>

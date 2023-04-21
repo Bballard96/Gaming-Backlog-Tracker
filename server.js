@@ -21,7 +21,7 @@ import'./config/passport.js'
 // import routes
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
-import { router as gamesRouter } from './routes/game.js'
+import { router as gamesRouter } from './routes/games.js'
 
 // create the express app
 const app = express()
