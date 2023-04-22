@@ -1,12 +1,12 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/games/index.css" />
 <%- include('../partials/nav') %>
 <section>
   
   <% if (user) { %>
     <div class ="nav-text">
 <h1><%= user.profile.name %>'s Account</h1>
-<h1>My collection</h1>
-<form action="/games" method="POST"></form>
+<!-- <form action="/games" method="POST"></form> -->
 </div>
 
   <% } %>
@@ -14,6 +14,7 @@
 </section>
 <main>
 <h1>Game List:</h1>
+<h1>My collection</h1>
 <table id="list">
   <thead>
     <tr>
@@ -26,14 +27,14 @@
   <tbody>
   <% games.forEach(game => { %>
   <tr>
-
     <td><%= game.title %></td>
-    <td><a href="/games/<%= game._id %>">Details</a></td>
     <td>
-    <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-    <button type="submit">X</button>
-    </form>
-    </td>
+      <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+      <button type="submit">X</button>
+      </form>
+      </td>
+    <td><a href="/games/<%= game._id %>">Details</a></td>
+
     </tr>
   <% }) %>
   </tbody>

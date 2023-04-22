@@ -10,11 +10,7 @@ function newGame(req, res) {
 }
 
 function create(req, res) {
-  // req.body.owner = req.user.profile._id
-  // req.body.completed = !!req.body.completed
-  // for (let key in req.body) {
-  //   if (req.body[key] === '') delete req.body[key]
-  // }
+  req.body.completed = !!req.body.completed
   Game.create(req.body)
   .then(game => {
     res.redirect(`/games/`)
@@ -29,7 +25,6 @@ function index(req, res) {
   Game.find({})
   // .populate('owner')
   .then(games => {
-    console.log(games);
     res.render('games/index', {
       games: games,
       title: "🎮 All Games"
@@ -82,6 +77,7 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+  req.body.completed = !!req.body.completed
   Game.findByIdAndUpdate(req.params.gameId, req.body, {new: true})
   .then(game => {
     res.redirect(`/games/${game._id}`)
@@ -92,7 +88,7 @@ function update(req, res) {
   })
 }
 
-function createReview(req, res) {
+function createComment(req, res) {
   Game.findById(req.params.gameId)
   .then(game => {
     game.comments.push(req.body)
@@ -112,6 +108,25 @@ function createReview(req, res) {
 }
 
 
+function deleteComment(req, res) {
+  Game.findById(req.params.gameId)
+  .then(game => {
+    game.comments.remove(req.params.commentId)
+    // movie.reviews.id(req.params.reviewId).deleteOne()
+    game.save()
+    .then(() => {
+      res.redirect(`/games/${game._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/games')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/games')
+  })
+}
 
 
 
@@ -132,5 +147,7 @@ export {
   show,
   edit,
   update,
-  createReview,
+  createComment,
+  deleteComment
+  
 }

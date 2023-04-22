@@ -4,8 +4,13 @@
 </head>
 <body>
   <nav>
-    
+
     <% if (user) { %>
+      <a class="addGame"
+      href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
+    >
+      Add game
+    </a>
       <a href="/auth/logout" class="right">
         <button type="submit">Logout</button>
       </a>
@@ -15,11 +20,7 @@
   >
     🎮 My collection
   </a>
-  <a 
-  href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
->
-  Add game
-</a>
+
 
 
     

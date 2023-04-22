@@ -1,0 +1,55 @@
+main{
+  background-color: #DAF5FF;
+}
+
+.firstPic {
+  size: 80%;
+}
+
+.addGame {
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-color: #C0DBEA;
+}
+
+table {
+  font-size: 20px;
+  background-color: #DAF5FF;
+  justify-content: center;
+  text-align: center;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#list td:nth-child(2),
+#list td:nth-child(3) {
+  min-width: 100px;
+}
+
+#list a {
+  border-radius: 4px;
+  background-color: #b8c0c2;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #424748;
+}
+
+#list a:visited{
+  color: #424748;
+}
+
+#list a:hover {
+  background-color: white;
+}

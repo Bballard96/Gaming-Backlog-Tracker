@@ -1,26 +1,25 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/games/forms.css" />
+<link rel="stylesheet" href="/stylesheets/games/index.css" />
 <%- include('../partials/nav') %>
 
 <main>
   <h1><%= title %></h1>
   <form id="new-form" action="/games" method="POST">
     <label for="title-input">Title:</label>
-    <input type="text" name="title" id="title-input">
+    <input type="text" name="title" id="title-input" autocomplete="off">
     <label for="hours-played-input">Hours played:</label>
-    <input type="text" name="hoursPlayed" id="hours-played-input">
+    <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off">
+
+    <label for="completed-checkbox">Completed:</label>
+    <input type="checkbox" name="completed" id="completed-checkbox">
     
-    <!-- <select name="completed" id="completed-checkbox">
-    </select> -->
-    <label for="content-textarea">Comments:</label>
-    <textarea name="content" id="content-textarea"></textarea>
+    <!-- <label for="content-textarea">Comments:</label>
+    <textarea name="content" id="content-textarea"></textarea> -->
 
     <!-- <label for="completed-checkbox">Completed:</label>
     <input type="checkbox" name="completed" id="completed-checkbox" checked> -->
 
-    <label for="completed-checkbox">Completed:</label>
-    <input type="checkbox" name="completed" id="completed-checkbox" checked>
-    <button type="submit">Add Game:</button>
+    <button type="submit">Add Game</button>
   </form>
 </main>
 
