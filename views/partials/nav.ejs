@@ -4,8 +4,14 @@
 </head>
 <body>
   <nav>
+    
+    <% if (user) { %>
+      <a href="/auth/logout" class="right">
+        <button type="submit">Logout</button>
+      </a>
+
     <a 
-    href="/games" class=<%= title === 'All gamess' ? 'active' : '' %>
+    href="/games" class=<%= title === 'All games' ? 'active' : '' %>
   >
     🎮 My collection
   </a>
@@ -15,10 +21,8 @@
   Add game
 </a>
 
-    <% if (user) { %>
-      <a href="/auth/logout" class="right">
-        <button type="submit">Logout</button>
-      </a>
+
+    
     <% } else { %>
       <div 
         id="g_id_onload"

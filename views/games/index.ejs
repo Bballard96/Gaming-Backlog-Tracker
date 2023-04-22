@@ -7,11 +7,6 @@
 <h1><%= user.profile.name %>'s Account</h1>
 <h1>My collection</h1>
 <form action="/games" method="POST"></form>
-<!-- <label>
-  Name:
-  <input type="text" name="name" autocomplete="off">
-</label>
-<button type="submit">Add 🎮</button> -->
 </div>
 
   <% } %>
@@ -19,17 +14,19 @@
 </section>
 <main>
 <h1>Game List:</h1>
-
 <table id="list">
   <thead>
     <tr>
       <th>Title:</th>
+      <!-- <th>Hours played:</th>
+      <th>Completed:</th>
+      <th>Comments:</th> -->
     </tr>
   </thead>
   <tbody>
   <% games.forEach(game => { %>
   <tr>
-    🎮
+
     <td><%= game.title %></td>
     <td><a href="/games/<%= game._id %>">Details</a></td>
     <td>

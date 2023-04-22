@@ -4,25 +4,18 @@
 
 <main>
   <h1><%= title %></h1>
-  <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
-
-
+  <form id="new-form" action="/games" method="POST">
     <label for="title-input">Title:</label>
-    <input type="text" name="title" id="title-input">
-    <option value="<%= game.title %>"> <%= game.title %></option>
-
+    <input type="text" name="title" id="title-input" value="<%= game.title %>"> 
     <label for="hours-played-input">Hours played:</label>
-    <input type="text" name="hoursPlayed" id="hours-played-input">
-
-    <!-- <label for="completed-checkbox">Completed:</label>
-    <input type="checkbox" name="completed" id="completed-checkbox" checked> -->
-    <label for="completed:checkbox">Completed:</label>
-    <input 
-      type="checkbox"
-      name="completed"
-      id="completed:checkbox"
-      <%= game.completed ? "checked" : "" %>
-    >
+    <input type="text" name="hoursPlayed" id="hours-played-input" value="<%= game.hoursPlayed %>">
+    
+    <!-- <select name="completed" id="completed-checkbox">
+    </select> -->
+    <label for="content-textarea">Comments:</label>
+    <textarea name="content" id="content-textarea"></textarea value="<%= game.comments %>">
+    <label for="completed-checkbox">Completed:</label>
+    <input type="checkbox" name="completed" id="completed-checkbox" checked>
 
     <button type="submit">Save changes to game</button>
   </form>

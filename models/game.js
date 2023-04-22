@@ -8,14 +8,13 @@ const commentSchema = new Schema({
 })
 
 const gameSchema = new Schema({
-  Title: {
+  title: {
     type: String, required: true
   },
   hoursPlayed: { type: Number, min: 1, max: 9999},
-  completed: {type: Boolean},
+  // completed: {type: Boolean},
   comments: [commentSchema],
-  owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
-//   owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
+  // owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
 // }, {
 //   timestamps: true,
 })
