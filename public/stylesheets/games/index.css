@@ -1,23 +1,78 @@
 main{
-  background-color: #DAF5FF;
+  background-color: #d9dbdb;
+  font-family: "Raleway";
+  text-align: center;
+  justify-content: center;
+}
+nav {
+  background-color: #bbbfbf;
+  border-radius: 30px;
+  font-family: "Raleway";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+
+
+.log-btn {
+  background-color: #d9dbdb;
+  color: black;
+  border: 2px solid black; /* Green */
+  border-radius: 1em;
+  size: 50em;
+}
+.log-btn:hover {
+background-color: white;
+}
+
+.profile-img{
+  /* border-radius: 100px; */
 }
 
 .firstPic {
   size: 80%;
 }
 
-.addGame {
+/* .addGame {
   justify-content: center;
   text-align: center;
+} */
+.title-quotes {
+  display: flex;
+  font-family: "Raleway";
+  font-size: 16px;
+  position: relative;
+  top: 180px;
+  color: black;
+  padding: 25px;
+  margin: 20px;
+  column-gap: 50px;
+}
+
+.game-list {
+  font-size: 25px;
 }
 
 body {
-  background-color: #C0DBEA;
+  background-color: #d9dbdb;
+
+  /* /* display: flexbox; */
+  margin: 20px; 
+
 }
 
 table {
   font-size: 20px;
-  background-color: #DAF5FF;
+  background-color: #d9dbdb;
   justify-content: center;
   text-align: center;
 }
@@ -32,22 +87,29 @@ table td {
   text-align: center;
 }
 
+table td {
+
+}
+
 #list td:nth-child(2),
 #list td:nth-child(3) {
   min-width: 100px;
+
 }
 
 #list a {
   border-radius: 4px;
-  background-color: #b8c0c2;
+  background-color: #d9dbdb;;
   padding: 4px;
   text-decoration: none;
   font-size: 16px;
   color: #424748;
+
 }
 
 #list a:visited{
   color: #424748;
+
 }
 
 #list a:hover {
