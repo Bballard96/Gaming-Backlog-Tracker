@@ -1,8 +1,21 @@
 body {
   background-color: #d0d5d8;
 }
+
+nav {
+  background-color: #bbbfbf;
+  /* border-radius: 30px; */
+  font-family: "Raleway";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 25px;
+  justify-content: space-evenly;
+}
 main {
   color: black;
+  font-family: "Raleway";
 }
 
 form {
@@ -10,6 +23,7 @@ form {
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 352px));
   font-size: 20px;
+  font-family: "Raleway";
 }
 
 form * {
@@ -23,4 +37,5 @@ form > button {
   width: 160px;
   margin-left: auto;
   font-size: 22px;
+  font-family: "Raleway";
 }
