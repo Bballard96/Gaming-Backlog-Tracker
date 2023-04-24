@@ -14,6 +14,7 @@ const gameSchema = new Schema({
     type: String, required: true
   },
   hoursPlayed: { type: Number, min: 1, max: 9999},
+  esrbRating: {type: String, enum: ['E', 'T', 'M', 'AO']},
   completed: {type: Boolean},
   // comments: {type: String },
   comments: [commentSchema],
