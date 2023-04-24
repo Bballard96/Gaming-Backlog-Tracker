@@ -51,7 +51,7 @@ body {
 }
 
 #add-text{
-  font-size: 1em;
+  font-size: 16px;
   justify-content: center;
   text-align: center;
   border-bottom: none;
@@ -66,7 +66,7 @@ body {
   left: calc(50% - 3em);
   top: calc(50% - 2em);
 
-  height: 2.5em;
+  height: 2.2em;
   width: 7em;
   
   background: #444;
@@ -145,6 +145,7 @@ section {
   border: 2px solid black; /* Green */
   border-radius: 1em;
   size: 20em;
+  font-size: 15px;
 }
 .log-btn:hover {
 background-color: white;

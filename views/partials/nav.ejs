@@ -6,22 +6,26 @@
   <nav>
 
     <% if (user) { %>
-      <a id="add-btn" 
+      <a  id="collect-btn"
       href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
     >
-    <div id="add-text">
+    <div id="collect-text">
     🎮 Add game 
   </div>
     </a>
-      <a  href="/auth/logout" >
-        <button class="log-btn" type="submit">Logout</button>
-      </a>
 
-    <a 
+    <a id="add-btn"
     href="/games" class=<%= title === 'All games' ? 'active' : '' %>
   >
+  <div id="add-text">
     🎮 My collection
+  </div>
   </a>
+
+  <a  href="/auth/logout" >
+    <button class="log-btn" type="submit">Logout</button>
+  </a>
+
     <a 
     href="/games" class=<%= title === 'All games' ? 'active' : '' %>
   >
