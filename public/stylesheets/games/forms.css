@@ -16,6 +16,17 @@ nav {
 main {
   color: black;
   font-family: "Raleway";
+  padding-top: 20px;
+}
+
+#edit-trash-btn {
+width: 4.5em;
+height: 2em;
+border-radius: 30px;
+}
+
+#edit-trash-btn:hover {
+  background-color: white;
 }
 
 form {

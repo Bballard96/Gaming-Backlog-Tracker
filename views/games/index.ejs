@@ -14,7 +14,7 @@
 </section>
 <main>
   <h1>My collection:</h1>
-  <p>You have <%= games.length %> games in your collection </p>
+  <p class="num-list">You have <%= games.length %> games in your collection </p>
 <table id="list">
   <thead>
     <tr>
@@ -24,16 +24,18 @@
       <th>Comments:</th> -->
     </tr>
   </thead>
-  <tbody class="game-list">
+  <tbody>
   <% games.forEach(game => { %>
   <tr>
+    <div id="list-border">
     <td><%= game.title %></td>
     <td>
       <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-      <button type="submit">X</button>
+      <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
       </form>
       </td>
-    <td><a href="/games/<%= game._id %>">Details</a></td>
+      </div>
+    <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
 
     </tr>
   <% }) %>

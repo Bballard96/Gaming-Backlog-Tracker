@@ -40,6 +40,18 @@ body > main h1:first-child {
   margin-bottom: 50px;
 }
 
+nav {
+  background-color: #bbbfbf;
+  border-radius: 30px;
+  font-family: "Raleway";
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 25px;
+  justify-content: space-evenly;
+}
+
 body > nav {
   grid-area: nav;
   background-color: #b8c0c2;

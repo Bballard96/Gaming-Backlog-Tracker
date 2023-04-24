@@ -1,5 +1,5 @@
 <%- include('../partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/games/show.css" />
+<link rel="stylesheet" href="/stylesheets/games/forms.css" />
 <%- include('../partials/nav') %>
 
 <main>
@@ -7,7 +7,7 @@
   <div>
     <!-- <option value=""></option> -->
     <a href="/games/<%= game._id %>/edit">
-      <button class="edit">Edit</button>
+      <button class="edit">Edit <i class="fas fa-pencil fa-s"></i></button>
     </a>
   </section>
 </div>
@@ -21,15 +21,18 @@
     <div><strong>Completed:</strong> <%= game.completed ? 'Yes' : 'No' %></div>
 </section>
 <h2>Comments</h2>
-  <form 
-    id="add-comment-form"
-    action="/games/<%= game._id %>/comments"
-    method="POST"
-  >
-    <label for="content-textarea">Comments:</label>
-    <textarea name="content" id="content-textarea"></textarea>
-    <button type="submit">Add Comment</button>
-  </form>
+<form 
+  id="add-comment-form"
+  action="/games/<%= game._id %>/comments"
+  method="POST"
+>
+  <label for="content-textarea">Comments:</label>
+  <textarea name="content" id="content-textarea"></textarea>
+  <button type="submit">Add Comment</button>
+</form>
+
+
+
 
 	<% if (game.comments.length) { %>
     <table>
@@ -48,7 +51,7 @@
             <td><%= comment.content %></td>
 						<td>
               <form action="/games/<%= game._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                <button>X</button>
+                <button id="edit-trash-btn"><i class="fas fa-trash fa-s"></i></button>
               </form>
             </td>
           </tr>

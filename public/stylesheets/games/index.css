@@ -16,12 +16,30 @@ nav {
   justify-content: space-evenly;
 }
 
+#details-btn {
+  outline:auto;
+  /* background-color: #424748;
+  color: #424748; */
+}
+
 .wrapper {
   margin: 0 auto;
   width: 1000px;
 }
 
+.num-list {
+  font-size: 20px;
+  font-family: "Raleway";
+}
 
+table tr {
+  border-bottom: 2px solid black;
+
+}
+
+section {
+  font-family: "Raleway";
+}
 
 .log-btn {
   background-color: #d9dbdb;
@@ -99,7 +117,7 @@ table td {
 
 #list a {
   border-radius: 4px;
-  background-color: #d9dbdb;;
+  background-color: #d9dbdb;
   padding: 4px;
   text-decoration: none;
   font-size: 16px;
