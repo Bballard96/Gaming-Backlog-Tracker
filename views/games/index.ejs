@@ -5,7 +5,7 @@
   
   <% if (user) { %>
     <div class ="nav-text">
-<h1><%= user.profile.name %>'s Account</h1>
+<h1 id="profile-text"><%= user.profile.name %>'s Account</h1>
 <!-- <form action="/games" method="POST"></form> -->
 </div>
 
@@ -33,13 +33,16 @@
       <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
       <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
     </form>
+    <form action="/games/completed<%= game.id %>?_method=DELETE" method="PUT">
     <button type="submit">C</button>
+    </form>
       </td>
       </div>
     <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
 
     </tr>
   <% }) %>
+  
   </tbody>
 </table>
 </main>

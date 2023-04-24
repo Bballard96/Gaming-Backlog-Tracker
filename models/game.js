@@ -16,12 +16,13 @@ const gameSchema = new Schema({
   hoursPlayed: { type: Number, min: 1, max: 9999},
   completed: {type: Boolean},
   // comments: {type: String },
-  comments: [commentSchema]
+  comments: [commentSchema],
   // rating: {type: Number, min: 1, max: 5, default: 5}
-  // owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
+  owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
 // }, {
 //   timestamps: true,
 })
+
 
 const Game = mongoose.model('Game', gameSchema)
 

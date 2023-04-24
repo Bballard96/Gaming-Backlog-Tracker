@@ -6,6 +6,9 @@ const router = Router()
 
 router.get('/', gamesCtrl.index)
 
+// new index page
+router.get('/', gamesCtrl.newIndex)    
+
 router.get('/new', gamesCtrl.new)
 
 router.get('/:gameId', gamesCtrl.show)

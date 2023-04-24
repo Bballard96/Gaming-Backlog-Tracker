@@ -10,6 +10,7 @@ function newGame(req, res) {
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile._id
   req.body.completed = !!req.body.completed
   Game.create(req.body)
   .then(game => {
@@ -22,10 +23,29 @@ function create(req, res) {
 }
 
 function index(req, res) {
+  const profileID = req.user.profile.id 
+  Game.find({ owner: profileID})
   Game.find({})
   // .populate('owner')
   .then(games => {
     res.render('games/index', {
+      games: games,
+      title: "🎮 All Games"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
+function newIndex(req, res) {
+  const profileID = req.user.profile.id 
+  Game.find({ owner: profileID})
+  Game.find({})
+  // .populate('owner')
+  .then(games => {
+    res.render('games/completed', {
       games: games,
       title: "🎮 All Games"
     })
@@ -148,6 +168,7 @@ export {
   edit,
   update,
   createComment,
-  deleteComment
+  deleteComment,
+  newIndex
   
 }

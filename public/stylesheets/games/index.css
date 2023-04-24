@@ -1,11 +1,11 @@
 main{
-  background-color: #d9dbdb;
+  background-color: #F6F1E9;
   font-family: "Raleway";
   text-align: center;
   justify-content: center;
 }
 nav {
-  background-color: #bbbfbf;
+  background-color: #FFD93D;
   border-radius: 30px;
   font-family: "Raleway";
   font-size: 20px;
@@ -14,6 +14,65 @@ nav {
   column-gap: 10px;
   padding: 25px;
   justify-content: space-evenly;
+}
+
+/* Animation property */
+button {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+body {
+  background: #000;
+}
+
+button {
+  position: absolute;
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  
+  height: 2.5em;
+  width: 7em;
+  
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 0 0 0.2em 0.2em;
+  color: #fff;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+}
+
+#profile-text {
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
 }
 
 #details-btn {
@@ -32,9 +91,16 @@ nav {
   font-family: "Raleway";
 }
 
-table tr {
+table {
   border-bottom: 2px solid black;
 
+}
+tr:nth-child(even) {
+  background-color: rgba(238, 219, 42, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(209, 195, 37, 0.4);
 }
 
 section {
@@ -42,11 +108,11 @@ section {
 }
 
 .log-btn {
-  background-color: #d9dbdb;
+  background-color: #e3dfda;
   color: black;
   border: 2px solid black; /* Green */
   border-radius: 1em;
-  size: 50em;
+  size: 20em;
 }
 .log-btn:hover {
 background-color: white;
@@ -70,7 +136,7 @@ background-color: white;
   font-size: 16px;
   position: relative;
   top: 180px;
-  color: black;
+  color: #4F200D;
   padding: 25px;
   margin: 20px;
   column-gap: 50px;
@@ -81,7 +147,7 @@ background-color: white;
 }
 
 body {
-  background-color: #d9dbdb;
+  background-color: #F6F1E9;
 
   /* /* display: flexbox; */
   margin: 20px; 
@@ -90,7 +156,7 @@ body {
 
 table {
   font-size: 20px;
-  background-color: #d9dbdb;
+  background-color: #F6F1E9;
   justify-content: center;
   text-align: center;
 }
