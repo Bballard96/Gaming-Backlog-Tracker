@@ -22,6 +22,48 @@ border-radius: 30px;
   background-color: white;
 }
 
+.detail-table {
+text-align: center;
+margin-top: -10px;
+}
+
+.detail-table td {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2em;
+  display: flex;
+  padding: .5em;
+}
+
+h3{
+  margin-bottom: 10em;
+}
+
+button.edit {
+  padding: 5px;
+  margin-bottom: 1px;
+}
+
+
+table th {
+  padding: 12px;
+}
+
+.comment-table {
+  /* display: flex; */
+  margin-bottom: 1em;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.comment-area {
+  margin: 0px;
+  padding-bottom: 2em;
+  padding-top: 1px;
+}
 
 nav {
   background-color: #FFD93D;

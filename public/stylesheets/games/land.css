@@ -45,7 +45,7 @@ nav {
   }
 }
 
-a:link {
+/* a:link {
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 
 a:active {
   text-decoration: none;
-}
+} */
 
 
 #profile-text {

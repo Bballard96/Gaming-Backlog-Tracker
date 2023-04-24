@@ -1,0 +1,50 @@
+<% if (!user) { %>
+  <script defer src="https://accounts.google.com/gsi/client"></script>
+<% } %>
+</head>
+<body>
+<nav>
+
+  <% if (user) { %>
+    <a  id="collect-btn"
+    href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
+  >
+  <div id="collect-text">
+  🎮 Add game 
+</div>
+  </a>
+
+
+
+<a  href="/auth/logout" >
+  <button class="log-btn" type="submit">Logout</button>
+</a>
+
+  <a 
+  href="/games" class=<%= title === 'All games' ? 'active' : '' %>
+>
+  🎮 COMPLETED
+</a>
+
+
+
+  
+  <% } else { %>
+    <div 
+      id="g_id_onload"
+      data-client_id="<%= googleClientID %>"
+      data-login_uri="/auth/google"
+      data-auto_prompt="false"
+      data-prompt_parent_id="g_id_onload"
+    ></div>
+    <div 
+      class="g_id_signin right"
+      data-type="standard"
+      data-size="large"
+      data-theme="outline"
+      data-text="sign_in_with"
+      data-shape="rectangular"
+      data-logo_alignment="left"
+    ></div>
+  <% } %>
+</nav>

@@ -81,20 +81,20 @@ body {
   border-bottom: none;
 }
 
-a:link {
+#add-btn:link {
   text-decoration: none;
 }
 
-a:visited {
+#add-btn:visited {
   text-decoration: none;
 }
 
-a:hover {
+#add-btn:hover {
   text-decoration: none;
   color: black;
 }
 
-a:active {
+#add-btn:active {
   text-decoration: none;
 }
 #add-btn:hover {
