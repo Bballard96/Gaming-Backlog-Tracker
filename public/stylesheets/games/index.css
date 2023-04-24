@@ -63,7 +63,7 @@ body {
 
 
 #add-btn {
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
   position: absolute;
   left: calc(50% - 3em);
   top: calc(50% - 2em);
@@ -113,10 +113,6 @@ body {
   color: #424748; */
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 1000px;
-}
 
 .num-list {
   font-size: 20px;
@@ -184,7 +180,7 @@ background-color: orange;
   position: relative;
   top: 180px;
   color: black;
-  padding: 25px;
+  padding: 70px;
   margin: 20px;
   column-gap: 50px;
 }
@@ -248,4 +244,9 @@ table td {
 
 #list a:hover {
   background-color: white;
+  /* color: orange; */
+}
+
+a:hover {
+color: orange;
 }

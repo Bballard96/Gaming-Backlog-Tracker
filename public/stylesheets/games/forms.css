@@ -178,5 +178,7 @@ form > button {
   font-family: "Raleway";
 }
 
-
+a:hover {
+color: orange;
+}
 
