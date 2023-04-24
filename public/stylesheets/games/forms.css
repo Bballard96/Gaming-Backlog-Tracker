@@ -2,6 +2,17 @@ body {
   background-color: #d0d5d8;
 }
 
+.log-btn {
+  background-color: #d9dbdb;
+  color: black;
+  border: 2px solid black; /* Green */
+  border-radius: 1em;
+  size: 50em;
+}
+.log-btn:hover {
+background-color: white;
+}
+
 nav {
   background-color: #bbbfbf;
   /* border-radius: 30px; */
