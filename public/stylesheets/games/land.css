@@ -206,3 +206,7 @@ table td {
 #list a:hover {
   background-color: white;
 }
+
+a:hover {
+color: orange;
+}
