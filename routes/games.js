@@ -13,10 +13,10 @@ router.get('/new', gamesCtrl.new)
 
 router.get('/:gameId', gamesCtrl.show)
 
-router.get('/:gameId/edit', gamesCtrl.edit)
+router.get('/:gameId/edit', isLoggedIn, gamesCtrl.edit)
 
 // had an isLoggedIn here in middle
-router.post('/', gamesCtrl.create)
+router.post('/', isLoggedIn, gamesCtrl.create)
 
 router.post('/:gameId/comments', gamesCtrl.createComment)
 
@@ -24,7 +24,7 @@ router.delete('/:gameId', gamesCtrl.delete)
 
 router.delete('/:gameId/comments/:commentId', gamesCtrl.deleteComment)
 
-router.put('/:gameId', gamesCtrl.update)
+router.put('/:gameId', isLoggedIn, gamesCtrl.update)
 
 export {
   router

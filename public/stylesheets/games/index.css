@@ -48,6 +48,7 @@ nav {
 
 body {
   background: #000;
+  font-family: "Raleway";
 }
 
 #add-text{
@@ -62,20 +63,18 @@ body {
 
 
 #add-btn {
+  font-family: "Raleway";
   position: absolute;
   left: calc(50% - 3em);
   top: calc(50% - 2em);
-
   height: 2.2em;
   width: 7em;
-  
   background: #444;
   background: linear-gradient(top, #555, #333);
   border: none;
   border-top: 3px solid orange;
   border-radius: 20px;
   color: #fff;
-  font-family: Helvetica, Arial, Sans-serif;
   font-size: 1em;
   transform-origin: 50% 5em;
   border-bottom: none;
@@ -98,7 +97,7 @@ body {
   text-decoration: none;
 }
 #add-btn:hover {
-  color: black;
+  color: orange;
 }
 
 #profile-text {
@@ -109,6 +108,7 @@ body {
 
 #details-btn {
   outline:auto;
+  font-family: "Raleway";
   /* background-color: #424748;
   color: #424748; */
 }
@@ -125,6 +125,7 @@ body {
 
 table {
   border-bottom: 2px solid black;
+  font-family: "Raleway";
 
 }
 tr:nth-child(even) {
@@ -140,15 +141,28 @@ section {
 }
 
 .log-btn {
-  background-color: #e3dfda;
+  /* background-color: #e3dfda;
   color: black;
   border: 2px solid black; /* Green */
-  border-radius: 1em;
+  /* border-radius: 1em;
   size: 20em;
-  font-size: 15px;
+  font-size: 15px; */
+  font-family: "Raleway";
+  height: 2em;
+  width: 7em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
 }
+
 .log-btn:hover {
-background-color: white;
+background-color: orange;
 }
 
 .profile-img{
@@ -177,13 +191,14 @@ background-color: white;
 
 .game-list {
   font-size: 25px;
+  font-family: "Raleway";
 }
 
 body {
   background-color: #F6F1E9;
-
   /* /* display: flexbox; */
   margin: 20px; 
+  font-family: "Raleway";
 
 }
 
@@ -192,11 +207,13 @@ table {
   background-color: #F6F1E9;
   justify-content: center;
   text-align: center;
+  font-family: "Raleway";
 }
 
 table thead th {
   padding: 5px;
   border-bottom: 2px solid #424748;
+  font-family: "Raleway";
 }
 
 table td {

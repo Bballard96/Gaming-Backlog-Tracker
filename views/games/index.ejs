@@ -1,5 +1,8 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/games/land.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav2') %>
 <section>
   
@@ -19,6 +22,8 @@
   <thead>
     <tr>
       <th>Title:</th>
+      <th> </th>
+      <th>Details:</th>
       <!-- <th>Hours played:</th>
       <th>Completed:</th>
       <th>Comments:</th> -->
@@ -33,9 +38,9 @@
       <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
       <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
     </form>
-    <form action="/games/completed<%= game.id %>?_method=DELETE" method="PUT">
+    <!-- <form action="/games/completed<%= game.id %>?_method=DELETE" method="PUT">
     <button type="submit">C</button>
-    </form>
+    </form> -->
       </td>
       </div>
     <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>

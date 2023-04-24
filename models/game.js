@@ -13,7 +13,7 @@ const gameSchema = new Schema({
   title: {
     type: String, required: true
   },
-  hoursPlayed: { type: Number, min: 1, max: 9999},
+  hoursPlayed: { type: Number, min: 0, max: 9999},
   esrbRating: {type: String, enum: ['E', 'T', 'M', 'AO']},
   completed: {type: Boolean},
   // comments: {type: String },

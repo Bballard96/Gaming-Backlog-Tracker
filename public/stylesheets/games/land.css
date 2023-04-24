@@ -87,6 +87,7 @@ a:active {
 
 table {
   border-bottom: 2px solid black;
+  padding: 2px;
 
 }
 tr:nth-child(even) {
@@ -102,14 +103,24 @@ section {
 }
 
 .log-btn {
-  background-color: #e3dfda;
-  color: black;
-  border: 2px solid black; /* Green */
-  border-radius: 1em;
-  size: 20em;
+  /* border-radius: 1em; */
+  font-family: "Raleway";
+  size: 20em; 
+  height: 1.7em;
+  width: 7em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
 }
+
 .log-btn:hover {
-background-color: white;
+background-color: orange;
 }
 
 .profile-img{
@@ -138,6 +149,7 @@ background-color: white;
 
 .game-list {
   font-size: 25px;
+  /* padding: 50px; */
 }
 
 body {
@@ -163,6 +175,7 @@ table thead th {
 table td {
   padding: 10px;
   text-align: center;
+  padding: 40px;
 }
 
 table td {

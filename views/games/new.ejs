@@ -1,14 +1,17 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/games/forms.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
 
 <main>
   <h1><%= title %></h1>
   <form id="new-form" action="/games" method="POST">
     <label for="title-input">Title:</label>
-    <input type="text" name="title" id="title-input" autocomplete="off">
+    <input type="text" name="title" id="title-input" autocomplete="off" placeholder="Game title">
     <label for="hours-played-input">Hours played:</label>
-    <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off">
+    <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off" placeholder="Total hours played">
 
     <label for="esrb-rating-select">ESRB Rating:</label>
     <select name="esrbRating" id="esrb-rating-select" >
