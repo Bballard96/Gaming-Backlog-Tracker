@@ -103,7 +103,6 @@ section {
 }
 
 .log-btn {
-  /* border-radius: 1em; */
   font-family: "Raleway";
   size: 20em; 
   height: 1.7em;
@@ -124,17 +123,13 @@ background-color: orange;
 }
 
 .profile-img{
-  /* border-radius: 100px; */
 }
 
 .firstPic {
   size: 80%;
 }
 
-/* .addGame {
-  justify-content: center;
-  text-align: center;
-} */
+
 .title-quotes {
   display: flex;
   font-family: "Raleway";
@@ -149,13 +144,11 @@ background-color: orange;
 
 .game-list {
   font-size: 25px;
-  /* padding: 50px; */
+
 }
 
 body {
   background-color: #F6F1E9;
-
-  /* /* display: flexbox; */
   margin: 20px; 
 
 }
@@ -261,8 +254,6 @@ color: orange;
 }
 
 #trash-index {
-  /* width: 30px; */
-  /* border-radius: 10px; */
   font-family: "Raleway";
   size: 20em; 
   height: 1.7em;

@@ -26,7 +26,6 @@ function index(req, res) {
   const profileID = req.user.profile.id 
   Game.find({ owner: profileID})
   Game.find({})
-  // .populate('owner')
   .then(games => {
     res.render('games/index', {
       games: games,
@@ -43,7 +42,6 @@ function newIndex(req, res) {
   const profileID = req.user.profile.id 
   Game.find({ owner: profileID})
   Game.find({})
-  // .populate('owner')
   .then(games => {
     res.render('games/completed', {
       games: games,
@@ -58,7 +56,6 @@ function newIndex(req, res) {
 
 function show(req, res) {
   Game.findById(req.params.gameId)
-  // .populate('owner')
   .then(game => {
     res.render('games/show', {
       game: game,
@@ -132,7 +129,6 @@ function deleteComment(req, res) {
   Game.findById(req.params.gameId)
   .then(game => {
     game.comments.remove(req.params.commentId)
-    // movie.reviews.id(req.params.reviewId).deleteOne()
     game.save()
     .then(() => {
       res.redirect(`/games/${game._id}`)

@@ -17,7 +17,6 @@ html {
 body {
   background-color: #d0d5d8;
   color: #f6f6f6;
-  /* Use a system font, if none are available use any found sans-sarif font */
   font-family: "Raleway";
   margin: 0;
 }

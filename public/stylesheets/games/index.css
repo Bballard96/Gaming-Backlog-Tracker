@@ -19,14 +19,12 @@ a#add-btn{
   positon: relative;
   left: 45.9%;
 }
-/* Animation property */
 #add-btn {
   animation: wiggle 2s linear infinite;
 }
 
 
 
-/* Keyframes */
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -68,7 +66,6 @@ body {
 
 
 #add-btn {
-  /* font-family: "Raleway"; */
   position: absolute;
   left: calc(50% - 3em);
   top: calc(50% - 2em);
@@ -140,23 +137,6 @@ left: 80px;
   }
 
 
-/* .firstPicDiv {
-  position: relative;
-  bottom: 90px;
-  left: 130px;
-}
-
-.secondPicDiv {
-  position: relative;
-  bottom: 83px;
-  left: 200px;
-}
-.thirdPicDiv {
-  position: relative;
-  bottom: 100px;
-  left: 100px;
-} */
-
 .num-list {
   font-size: 20px;
   font-family: "Raleway";
@@ -180,12 +160,6 @@ section {
 }
 
 .log-btn {
-  /* background-color: #e3dfda;
-  color: black;
-  border: 2px solid black; /* Green */
-  /* border-radius: 1em;
-  size: 20em;
-  font-size: 15px; */
   font-family: "Raleway";
   height: 2em;
   width: 7em;
@@ -204,18 +178,12 @@ section {
 background-color: orange;
 }
 
-.profile-img{
-  /* border-radius: 100px; */
-}
+
 
 .firstPic {
   size: 80%;
 }
 
-/* .addGame {
-  justify-content: center;
-  text-align: center;
-} */
 .title-quotes {
   display: flex;
   justify-content: space-evenly; 
@@ -237,7 +205,6 @@ background-color: orange;
 
 body {
   background-color: #F6F1E9;
-  /* /* display: flexbox; */
   margin: 20px; 
   font-family: "Raleway";
 
@@ -289,7 +256,6 @@ table td {
 
 #list a:hover {
   background-color: white;
-  /* color: orange; */
 }
 
 a:hover {

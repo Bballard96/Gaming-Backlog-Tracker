@@ -7,8 +7,7 @@
 
 <main>
   <h1><%= title %></h1>
-  <!-- my version below -->
-  <!-- <form id="new-form" action="/games" method="POST"> -->
+
 
     <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
 
@@ -53,8 +52,6 @@
       id="completed-checkbox"
       <%= game.completed ? "checked" : "" %>
     >
-    <!-- <select name="completed" id="completed-checkbox">
-    </select> -->
 
     <button id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>

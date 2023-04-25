@@ -9,7 +9,6 @@
   <% if (user) { %>
     <div class ="nav-text">
 <h1 id="profile-text"><%= user.profile.name %>'s Account</h1>
-<!-- <form action="/games" method="POST"></form> -->
 </div>
 
   <% } %>
@@ -25,9 +24,6 @@
       <th>Completed</th>
       <th> </th>
       <th>Details:</th>
-      <!-- <th>Hours played:</th>
-      <th>Completed:</th>
-      <th>Comments:</th> -->
     </tr>
   </thead>
   <tbody>
@@ -42,9 +38,6 @@
   
     </form>
     </div>
-    <!-- <form action="/games/completed<%= game.id %>?_method=DELETE" method="PUT">
-    <button type="submit">C</button>
-    </form> -->
       </td>
       </div>
     <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
