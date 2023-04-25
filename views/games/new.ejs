@@ -8,12 +8,12 @@
 <main>
   <h1><%= title %></h1>
   <form id="new-form" action="/games" method="POST">
-    <label for="title-input">Title:</label>
+    <label for="title-input"><strong>Title:</strong></label>
     <input type="text" name="title" id="title-input" autocomplete="off" placeholder="Game title">
-    <label for="hours-played-input">Hours played:</label>
+    <label for="hours-played-input"><strong>Hours played:</strong></label>
     <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off" placeholder="Total hours played">
 
-    <label for="esrb-rating-select">ESRB Rating:</label>
+    <label for="esrb-rating-select"><strong>ESRB Rating:</strong></label>
     <select name="esrbRating" id="esrb-rating-select" >
       <option value="E">E</option>
       <option value="T">T</option>
@@ -21,7 +21,7 @@
       <option value="AO">AO</option>
     </select>
 
-    <label for="completed-checkbox">Completed:</label>
+    <label for="completed-checkbox"><strong>Completed:</strong></label>
     <input type="checkbox" name="completed" id="completed-checkbox">
     
     <!-- <label for="content-textarea">Comments:</label>
