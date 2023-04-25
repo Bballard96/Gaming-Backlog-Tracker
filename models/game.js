@@ -15,6 +15,7 @@ const gameSchema = new Schema({
   },
   hoursPlayed: { type: Number, min: 0, max: 9999},
   esrbRating: {type: String, enum: ['E', 'T', 'M', 'AO']},
+  genre: {type: String, enum: ['Action', 'Platform', 'Shooter', 'Fighting', 'Survival', 'MMO', 'Horror', 'Visual Novel', 'Puzzle', 'RPG', 'Sim', 'Racing', 'Adventure', 'Sports', 'Card', 'Battle Royale']},
   completed: {type: Boolean},
   // comments: {type: String },
   comments: [commentSchema],

@@ -15,11 +15,16 @@ nav {
   padding: 25px;
   justify-content: space-evenly;
 }
-
+a#add-btn{
+  positon: relative;
+  left: 45.9%;
+}
 /* Animation property */
 #add-btn {
   animation: wiggle 2s linear infinite;
 }
+
+
 
 /* Keyframes */
 @keyframes wiggle {
