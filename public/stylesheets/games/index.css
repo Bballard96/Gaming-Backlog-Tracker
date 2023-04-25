@@ -113,6 +113,44 @@ body {
   color: #424748; */
 }
 
+#pic1 {
+width: 70%;
+height: 50%;
+border-radius: 30%;
+}
+
+#pic2 {
+  width: 50%;
+  height: 60%;
+border-radius: 30%;
+position: relative;
+left: 80px;
+}
+
+#pic3 {
+  width: 40%;
+  border-radius: 30%;
+  position: relative;
+  left: 130px;
+  }
+
+
+/* .firstPicDiv {
+  position: relative;
+  bottom: 90px;
+  left: 130px;
+}
+
+.secondPicDiv {
+  position: relative;
+  bottom: 83px;
+  left: 200px;
+}
+.thirdPicDiv {
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+} */
 
 .num-list {
   font-size: 20px;
@@ -175,14 +213,16 @@ background-color: orange;
 } */
 .title-quotes {
   display: flex;
+  justify-content: space-evenly; 
   font-family: "Raleway";
   font-size: 16px;
   position: relative;
-  top: 180px;
+  top: 230px;
   color: black;
   padding: 70px;
   margin: 20px;
   column-gap: 50px;
+
 }
 
 .game-list {
