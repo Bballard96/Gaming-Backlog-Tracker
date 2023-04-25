@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
   background-color: #F6F1E9;
   margin: 20px;
@@ -181,4 +183,60 @@ form > button {
 a:hover {
 color: orange;
 }
+
+#comment-btn{
+  font-family: "Raleway";
+  height: 4em;
+  width: 7em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+
+#comment-btn:hover{
+  color: orange;
+}
+
+#save-btn {
+  font-family: "Raleway";
+  height: 4em;
+  width: 7em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+#game-btn {
+  font-family: "Raleway";
+  height: 3em;
+  width: 7em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+
+#save-btn:hover {
+  color: orange;
+}
+#game-btn:hover {
+  color: orange;
+}
+
 

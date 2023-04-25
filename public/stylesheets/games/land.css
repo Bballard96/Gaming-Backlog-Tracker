@@ -259,3 +259,25 @@ color: orange;
   opacity: 0; 
   transform: scale(0.1, 1);
 }
+
+#trash-index {
+  /* width: 30px; */
+  /* border-radius: 10px; */
+  font-family: "Raleway";
+  size: 20em; 
+  height: 1.7em;
+  width: 3em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+
+#trash-index:hover{
+  color: orange;
+}

@@ -22,6 +22,7 @@
   <thead>
     <tr>
       <th>Title:</th>
+      <th>Completed</th>
       <th> </th>
       <th>Details:</th>
       <!-- <th>Hours played:</th>
@@ -34,9 +35,10 @@
   <tr>
     <div id="list-border">
     <td><%= game.title %></td>
+    <td> <%= game.completed ? 'Yes' : 'No' %></td>
     <td>
       <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-      <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
+      <button id="trash-index" type="submit"><i class="fas fa-trash fa-xs"></i></button>
   
     </form>
     </div>

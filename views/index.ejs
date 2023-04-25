@@ -13,7 +13,7 @@ sizes="32x32"></link>
 <%- include('./partials/nav') %>
 
 <main>
-  <h1><bold>hello, <%= user ? user.profile.name : "friend" %></bold></h1>
+  <h1><bold>Hello <%= user ? user.profile.name : "" %></bold></h1>
   <% if (user?.profile.avatar) { %>
     <div >
       <img class="profile-img"

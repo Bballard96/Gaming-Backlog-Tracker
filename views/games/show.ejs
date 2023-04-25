@@ -1,4 +1,11 @@
 <%- include('../partials/html-head') %>
+<link
+id="favicon"
+rel="icon"
+
+href="stylesheets/images/736540.png"
+type="image/png"
+sizes="32x32"></link>
 <link rel="stylesheet" href="/stylesheets/games/forms.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +29,7 @@
     <div><strong>Title:</strong> <br> <%= game.title %></div>
           </td>
           <td>
-    <div><strong>Hours played:</strong> <br> <%= game.hoursPlayed %></div>
+    <div><strong>Time played:</strong> <br> <%= game.hoursPlayed %></div>
   </td>
   <td>
     <div><strong>ESRB rating:</strong> <br> <%= game.esrbRating %></div>
@@ -84,7 +91,8 @@
 >
   <label for="content-textarea">Comments:</label>
   <textarea name="content" id="content-textarea"></textarea>
-  <button type="submit">Add Comment</button>
+  <button id="comment-btn" type="submit">Add Comment</button>
+  
 </form>
 </main>
   

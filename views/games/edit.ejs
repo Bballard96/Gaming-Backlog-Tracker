@@ -15,7 +15,7 @@
 
     <label for="title-input">Title:</label>
     <input type="text" name="title" id="title-input" value="<%= game.title %>"> 
-    <label for="hours-played-input">Hours played:</label>
+    <label for="hours-played-input">Time played:</label>
     <input type="text" name="hoursPlayed" id="hours-played-input" value="<%= game.hoursPlayed %>">
     <label for="esrb-rating-select">ESRB Rating</label>
     <select name="esrbRating" id="esrb-rating-select" >
@@ -56,7 +56,7 @@
     <!-- <select name="completed" id="completed-checkbox">
     </select> -->
 
-    <button type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
+    <button id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>
 </main>
 
