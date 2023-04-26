@@ -1,5 +1,3 @@
-// import { Game } from "../models/game.js";
-
 import { Game } from "../models/game.js";
 
 function newGame(req, res) {
@@ -22,13 +20,12 @@ function create(req, res) {
 }
 
 function index(req, res) {
-  const profileID = req.user.profile.id 
+  const profileID = req.user.profile._id 
   Game.find({ owner: profileID})
-  Game.find({})
   .then(games => {
     res.render('games/index', {
       games: games,
-      title: " All Games"
+      title: "All Games"
     })
   })
   .catch(err => {
@@ -44,7 +41,7 @@ function newIndex(req, res) {
   .then(games => {
     res.render('games/completed', {
       games: games,
-      title: " All Games"
+      title: "All Games"
     })
   })
   .catch(err => {
@@ -114,7 +111,7 @@ function createComment(req, res) {
     })
     .catch(err => {
       console.log(err)
-      res.redirect('/')
+      res.redirect(`/games/${game._id}`)
     })
   })
   .catch(err => {

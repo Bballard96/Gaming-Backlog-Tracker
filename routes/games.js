@@ -4,23 +4,23 @@ import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()
 
-router.get('/', gamesCtrl.index)
+router.get('/', isLoggedIn, gamesCtrl.index)
 
-router.get('/', gamesCtrl.newIndex)    
+router.get('/', isLoggedIn, gamesCtrl.newIndex)    
 
-router.get('/new', gamesCtrl.new)
+router.get('/new', isLoggedIn, gamesCtrl.new)
 
-router.get('/:gameId', gamesCtrl.show)
+router.get('/:gameId', isLoggedIn, gamesCtrl.show)
 
 router.get('/:gameId/edit', isLoggedIn, gamesCtrl.edit)
 
 router.post('/', isLoggedIn, gamesCtrl.create)
 
-router.post('/:gameId/comments', gamesCtrl.createComment)
+router.post('/:gameId/comments', isLoggedIn, gamesCtrl.createComment)
 
-router.delete('/:gameId', gamesCtrl.delete)
+router.delete('/:gameId', isLoggedIn, gamesCtrl.delete)
 
-router.delete('/:gameId/comments/:commentId', gamesCtrl.deleteComment)
+router.delete('/:gameId/comments/:commentId', isLoggedIn, gamesCtrl.deleteComment)
 
 router.put('/:gameId', isLoggedIn, gamesCtrl.update)
 

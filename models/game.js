@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const commentSchema = new Schema({
-  content: String,
+  content:{type: String, required: true}
 }, {
   timestamps: true
 })

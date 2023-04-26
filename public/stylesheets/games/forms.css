@@ -45,6 +45,7 @@ background-color: orange;
 height: 2em;
 border-radius: 30px;
 font-family: "Raleway";
+margin-left: auto;
 }
 
 .submit-btn:hover {
@@ -128,12 +129,17 @@ flex-direction: column;
   flex-wrap: wrap;
   margin-left: 60px;
   justify-content: space-evenly;
+  margin-top: 1px;
 }
 
 .comment-area {
   margin: 0px;
-  padding-bottom: 2em;
+  padding-bottom: -1px;
   padding-top: 1px;
+}
+
+label {
+  margin-left: auto;
 }
 
 
@@ -141,8 +147,8 @@ flex-direction: column;
 main {
   color: black;
   font-family: "Raleway";
-  padding-top: 20px;
-  row-gap: 5em;
+  padding-top: 20px 0 0 0;
+  row-gap: 3.5em;
 
 }
 
@@ -168,6 +174,14 @@ main {
 }
 
 form {
+  display: flexbox;
+  display: inline-flex;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, minmax(auto, 352px));
+  font-size: 20px;
+  font-family: "Raleway";
+}
+#new-form {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(2, minmax(auto, 352px));
@@ -184,10 +198,13 @@ form * {
 form > button {
   grid-column: span 2;
   width: 160px;
-  margin-left: auto;
+  /* margin-left: auto; */
   font-size: 22px;
   font-family: "Raleway";
 }
+
+
+
 
 a:hover {
 color: orange;
@@ -206,6 +223,7 @@ color: orange;
   font-size: 1em;
   transform-origin: 50% 5em;
   border-bottom: none;
+  margin-left: auto;
 }
 
 #comment-btn:hover{
@@ -225,6 +243,7 @@ color: orange;
   font-size: 1em;
   transform-origin: 50% 5em;
   border-bottom: none;
+  margin-left: auto;
 }
 #game-btn {
   font-family: "Raleway";
@@ -248,4 +267,6 @@ color: orange;
   color: orange;
 }
 
-
+table.comment-table {
+  padding-bottom: 5px;
+}
