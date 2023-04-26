@@ -15,12 +15,11 @@ nav {
   padding: 25px;
   justify-content: space-evenly;
 }
-/* Animation property */
+
 #collect-btn {
   animation: wiggle 2s linear infinite;
 }
 
-/* Keyframes */
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);

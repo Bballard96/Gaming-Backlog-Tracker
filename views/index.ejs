@@ -11,7 +11,6 @@ sizes="32x32"></link>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('./partials/nav') %>
-
 <main>
   <h1><bold>Hello <%= user ? user.profile.name : "" %></bold></h1>
   <% if (user?.profile.avatar) { %>
@@ -32,6 +31,5 @@ sizes="32x32"></link>
   <h1>Never forget about a game in your backlog again!</h1>
   </div>
   </div>
-
 </body>
 <%- include('./partials/footer') %>

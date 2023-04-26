@@ -2,12 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-/* The Universal Selector */
 *, /* All elements*/
 *::before, /* All ::before pseudo-elements */
 *::after {
-  /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default but can be overridden as needed */
   box-sizing: inherit;
 }
 .nav-text { 
@@ -29,7 +26,6 @@ nav {
   padding: 10px;
   min-height: 60px;
 }
-
 
 main {
   color: black;
