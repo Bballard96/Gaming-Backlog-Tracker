@@ -145,21 +145,6 @@ main {
 
 }
 
-/* #edit-trash-btn {
-width: 4.5em;
-height: 2em;
-border-radius: 30px;
-margin-bottom: 5px;
-font-size: 20px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-}
-
-#edit-trash-btn:hover {
-  background-color: white;
-} */
-
 #edit-trash-btn {
   font-family: "Raleway";
   size: 20em; 

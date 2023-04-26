@@ -29,7 +29,7 @@ function index(req, res) {
   .then(games => {
     res.render('games/index', {
       games: games,
-      title: "🎮 All Games"
+      title: " All Games"
     })
   })
   .catch(err => {
@@ -45,7 +45,7 @@ function newIndex(req, res) {
   .then(games => {
     res.render('games/completed', {
       games: games,
-      title: "🎮 All Games"
+      title: " All Games"
     })
   })
   .catch(err => {
