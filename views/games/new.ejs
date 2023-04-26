@@ -16,17 +16,19 @@ sizes="32x32"></link>
   <form id="new-form" action="/games" method="POST">
     <label for="title-input"><strong>Title:</strong></label>
     <input type="text" name="title" id="title-input" autocomplete="off" placeholder='Ex: "Skyrim"'>
+    <label for="platform-input"><strong>Platform:</strong></label>
+    <input type="text" name="platform" id="platform-input" autocomplete="off" placeholder='Ex: "PS5"'>
     <label for="hours-played-input"><strong>Time played:</strong></label>
     <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off" placeholder='Ex: "3 hours"'>
     <label for="esrb-rating-select"><strong>ESRB Rating:</strong></label>
-    <select name="esrbRating" id="esrb-rating-select">
+    <select style="cursor: pointer;" name="esrbRating" id="esrb-rating-select">
       <option value="E">E</option>
       <option value="T">T</option>
       <option value="M">M</option>
       <option value="AO">AO</option>
     </select>
     <label for="genre-select"><strong>Genre:</strong></label>
-    <select name="genre" id="genre-select">
+    <select style="cursor: pointer;" name="genre" id="genre-select">
       <option value="Action">Action</option>
       <option value="Platform">Platform</option>
       <option value="Shooter">Shooter</option>
@@ -45,8 +47,8 @@ sizes="32x32"></link>
       <option value="Battle Royale">Battle Royale</option>
     </select>
     <label for="completed-checkbox"><strong>Completed:</strong></label>
-    <input type="checkbox" name="completed" id="completed-checkbox">
-    <button id="game-btn" class="submit-btn" type="submit">Add Game <i class="fas fa-gamepad fa-xs"></i></button>
+    <input style="cursor: pointer;" type="checkbox" name="completed" id="completed-checkbox">
+    <button style="cursor: pointer;" id="game-btn" class="submit-btn" type="submit">Add Game <i class="fas fa-gamepad fa-xs"></i></button>
   </form>
 </main>
 <%- include("../partials/footer") %>

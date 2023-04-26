@@ -9,18 +9,20 @@
   <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
     <label for="title-input">Title:</label>
     <input type="text" name="title" id="title-input" value="<%= game.title %>"> 
+    <label for="platform-input">Platform:</label>
+    <input type="text" name="platform" id="platform-input" value="<%= game.platform %>"> 
     <label for="hours-played-input">Time played:</label>
     <input type="text" name="hoursPlayed" id="hours-played-input" value="<%= game.hoursPlayed %>">
     <label for="esrb-rating-select">ESRB Rating</label>
-    <select name="esrbRating" id="esrb-rating-select" >
+    <select style="cursor: pointer;" name="esrbRating" id="esrb-rating-select" >
       <option value="<%= game.esrbRating %>"><%= game.esrbRating %></option>
       <option value="E">E</option>
       <option value="T">T</option>
       <option value="M">M</option>
       <option value="AO">AO</option>
     </select>
-    <label for="genre-select"><strong>Genre:</strong></label>
-    <select name="genre" id="genre-select" >
+    <label  for="genre-select"><strong>Genre:</strong></label>
+    <select style="cursor: pointer;" name="genre" id="genre-select" >
       <option value="<%= game.genre %>"><%= game.genre %></option>
       <option value="action">Action</option>
       <option value="Platform">Platform</option>
@@ -40,13 +42,13 @@
       <option value="Battle Royale">Battle Royale</option>
     </select>
     <label for="completed-checkbox">Completed:</label>
-    <input 
+    <input style="cursor: pointer;" 
       type="checkbox"
       name="completed"
       id="completed-checkbox"
       <%= game.completed ? "checked" : "" %>
     >
-    <button id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
+    <button style="cursor: pointer;" id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>
 </main>
 <%- include("../partials/footer") %>

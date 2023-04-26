@@ -11,11 +11,11 @@ sizes="32x32"></link>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
-<main>
+<main >
   <h1><%= title %></h1>
   <div>
-    <a href="/games/<%= game._id %>/edit">
-      <button class="edit">Edit <i class="fas fa-edit fa-xs"></i></button>
+    <a  href="/games/<%= game._id %>/edit">
+      <button style="cursor: pointer;" class="edit">Edit <i class="fas fa-edit fa-xs" ></i></button>
     </a>
   </div>
   <section>
@@ -24,6 +24,9 @@ sizes="32x32"></link>
         <tr>
           <td>
             <div><strong>Title:</strong> <br> <%= game.title %></div>
+          </td>
+          <td>
+            <div><strong>Platform:</strong> <br> <%= game.platform %></div>
           </td>
           <td>
             <div><strong>Time played:</strong> <br> <%= game.hoursPlayed %></div>
@@ -78,7 +81,7 @@ sizes="32x32"></link>
   >
     <label for="content-textarea">Comments:</label>
     <textarea name="content" id="content-textarea"></textarea>
-    <button id="comment-btn" type="submit">Add Comment</button>
+    <button style="cursor: pointer;" id="comment-btn" type="submit">Add Comment <i class="fas fa-comment fa-S" ></i></button>
   </form>
 </main>
 <%- include('../partials/footer') %>
