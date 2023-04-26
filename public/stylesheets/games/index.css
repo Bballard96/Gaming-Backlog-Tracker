@@ -15,6 +15,10 @@ nav {
   padding: 25px;
   justify-content: space-evenly;
 }
+
+
+
+
 a#add-btn{
   positon: relative;
   left: 45.9%;
@@ -195,6 +199,7 @@ background-color: orange;
   padding: 70px;
   margin: 20px;
   column-gap: 50px;
+  left: 50px;
 
 }
 
@@ -260,4 +265,38 @@ table td {
 
 a:hover {
 color: orange;
+}
+
+
+footer{
+  position: relative;
+  top: 280px;
+  left: 39%;
+  font-size: 23px;
+  font-family: 'Raleway';
+  color: black;
+  width: 400px;
+  /* padding: 1px; */
+}
+
+a.email {
+  font-size: 18px;
+  font-family: "Raleway";
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+
+div.email-div{
+  padding-bottom: -40px;
+  margin-bottom: 1px;
+  justify-content: center;
+  text-align: center;
+}
+
+h3{
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
 }

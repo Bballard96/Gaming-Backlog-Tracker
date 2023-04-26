@@ -45,24 +45,6 @@ nav {
   }
 }
 
-/* a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-a:active {
-  text-decoration: none;
-} */
-
-
 #profile-text {
   justify-content: center;
   text-align: center;
@@ -71,9 +53,11 @@ a:active {
 
 #details-btn {
   outline:auto;
-  /* background-color: #424748;
-  color: #424748; */
 }
+
+#details-btn:hover{
+  color: orange;
+} 
 
 .wrapper {
   margin: 0 auto;
@@ -197,7 +181,8 @@ table td {
 }
 
 #list a:hover {
-  background-color: white;
+  background-color: #F6F1E9;
+  color: orange;
 }
 
 a:hover {
@@ -272,3 +257,23 @@ color: orange;
 #trash-index:hover{
   color: orange;
 }
+/* 
+#details-btn {
+  font-family: "Raleway";
+  size: 20em; 
+  height: 1.7em;
+  width: 3em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+
+#details-btn:hover{
+  color: orange;
+} */

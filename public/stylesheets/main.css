@@ -4,7 +4,7 @@ html {
 
 /* The Universal Selector */
 *, /* All elements*/
-*::before, /* All ::before pseudo-elements */
+
 *::after { /* All ::after pseudo-elements */
   box-sizing: inherit;
   font-family: "Raleway";
@@ -89,4 +89,4 @@ nav > a.active {
 
 .fas::before {
   font-family: "Raleway";
-}
+} 

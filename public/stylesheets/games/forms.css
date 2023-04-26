@@ -6,6 +6,10 @@ body {
   font-family: "Raleway";
 }
 
+h3 {
+margin:0px;
+}
+
 nav {
   background-color: #FFD93D;
   border-radius: 30px;
@@ -99,8 +103,8 @@ button.edit:hover {
 
 table th {
   padding: 0 12px 0 30px;
-  /* padding: 0 20px 0 10px; */
   flex-direction: column;
+  text-decoration: underline;
 
 }
 
@@ -116,7 +120,6 @@ flex-direction: column;
 }
 
 .comment-table {
-  /* display: flex; */
   margin-bottom: 1em;
   font-size: 20px;
   display: flex;
@@ -142,7 +145,7 @@ main {
 
 }
 
-#edit-trash-btn {
+/* #edit-trash-btn {
 width: 4.5em;
 height: 2em;
 border-radius: 30px;
@@ -155,6 +158,26 @@ justify-content: space-evenly;
 
 #edit-trash-btn:hover {
   background-color: white;
+} */
+
+#edit-trash-btn {
+  font-family: "Raleway";
+  size: 20em; 
+  height: 2em;
+  width: 3.5em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
+}
+
+#edit-trash-btn:hover{
+  color: orange;
 }
 
 form {

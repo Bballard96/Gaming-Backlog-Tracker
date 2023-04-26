@@ -3,7 +3,7 @@
 id="favicon"
 rel="icon"
 
-href="stylesheets/images/736540.png"
+href="/stylesheets/images/736540.png"
 type="image/png"
 sizes="32x32"></link>
 <link rel="stylesheet" href="/stylesheets/games/forms.css" />
@@ -16,7 +16,7 @@ sizes="32x32"></link>
   <h1><%= title %></h1>
   <div>
     <a href="/games/<%= game._id %>/edit">
-      <button class="edit">Edit <i class="fas fa-edit fa-s"></i></button>
+      <button class="edit">Edit <i class="fas fa-edit fa-xs"></i></button>
     </a>
   </section>
 </div>
@@ -66,7 +66,7 @@ sizes="32x32"></link>
             <td><%= comment.content %></td>
 						<td>
               <form action="/games/<%= game._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-                <button id="edit-trash-btn"><i class="fas fa-trash fa-s"></i></button>
+                <button id="edit-trash-btn"><i class="fas fa-trash fa-S"></i></button>
               </form>
             </td>
           </tr>

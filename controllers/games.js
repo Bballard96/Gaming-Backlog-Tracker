@@ -59,7 +59,7 @@ function show(req, res) {
   .then(game => {
     res.render('games/show', {
       game: game,
-      title: "Game Detail"
+      title: "Game Details"
     })
   })
   .catch(err => {
