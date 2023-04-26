@@ -5,41 +5,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
 <section>
-  
   <% if (user) { %>
-    <div class ="nav-text">
-<h1><%= user.profile.name %>'s completed list</h1>
-</div>
-
+    <div class="nav-text">
+      <h1><%= user.profile.name %>'s completed list</h1>
+    </div>
   <% } %>
-
 </section>
 <main>
-  <h1>My collection:</h1>
-  <p class="num-list">You have <%= games.length %> games in your collection <i <i class="fas fa-gamepad fa-xs"></i></p>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Title:</th>
-    </tr>
-  </thead>
-  <tbody>
-  <% games.forEach(game => { %>
-  <tr>
-    <div id="list-border">
-    <td><%= game.title %></td>
-    <td>
-      <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-      <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
-    </form>
-      </td>
-      </div>
-    <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
-
-    </tr>
-  <% }) %>
-  </tbody>
-</table>
+  <h1>Your collection:</h1>
+  <p class="num-list">You have <%= games.length %> games in your collection <i class="fas fa-gamepad fa-xs"></i></p>
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Title:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% games.forEach(game => { %>
+        <tr>
+          <div id="list-border">
+            <td><%= game.title %></td>
+            <td>
+              <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+                <button type="submit"><i class="fas fa-trash fa-xs"></i></button>
+              </form>
+            </td>
+          </div>
+          <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
 </main>
-
 <%- include('../partials/footer') %>

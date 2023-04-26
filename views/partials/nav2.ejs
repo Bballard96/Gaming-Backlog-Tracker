@@ -10,16 +10,16 @@
 <% } %>
 </head>
 <body>
-<nav>
+  <nav>
 
-  <% if (user) { %>
-    <a  id="collect-btn"
-    href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
+    <% if (user) { %>
+      <a  id="collect-btn"
+      href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
   >
   <div id="collect-text">
   🎮 Add game 
-</div>
-  </a>
+  </div>
+      </a>
 
 
 
@@ -46,4 +46,4 @@
       data-logo_alignment="left"
     ></div>
   <% } %>
-</nav>
+  </nav>

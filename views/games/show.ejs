@@ -11,60 +11,51 @@ sizes="32x32"></link>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
-
 <main>
   <h1><%= title %></h1>
   <div>
     <a href="/games/<%= game._id %>/edit">
       <button class="edit">Edit <i class="fas fa-edit fa-xs"></i></button>
     </a>
-  </section>
-</div>
+  </div>
   <section>
     <table class="detail-table">
       <tbody>
         <tr>
           <td>
-    <div><strong>Title:</strong> <br> <%= game.title %></div>
+            <div><strong>Title:</strong> <br> <%= game.title %></div>
           </td>
           <td>
-    <div><strong>Time played:</strong> <br> <%= game.hoursPlayed %></div>
-  </td>
-  <td>
-    <div><strong>ESRB rating:</strong> <br> <%= game.esrbRating %></div>
-  </td>
-  <td>
-    <div><strong>Genre:</strong> <br> <%= game.genre %></div>
-  </td>
+            <div><strong>Time played:</strong> <br> <%= game.hoursPlayed %></div>
+          </td>
+          <td>
+            <div><strong>ESRB rating:</strong> <br> <%= game.esrbRating %></div>
+          </td>
+          <td>
+            <div><strong>Genre:</strong> <br> <%= game.genre %></div>
+          </td>
+          <td>
+            <div><strong>Completed:</strong> <br> <%= game.completed ? 'Yes' : 'No' %></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-        <td>
-    <div><strong>Completed:</strong> <br> <%= game.completed ? 'Yes' : 'No' %></div>
-  </td>
-  </tr>
-  </tbody>
-  </table>
-</section>
-
-
-
-
-
-	<% if (game.comments.length) { %>
+  <% if (game.comments.length) { %>
     <table class="comment-table">
       <thead>
         <tr>
           <th>Date</th>
-					<th>Comment</th>
+          <th>Comment</th>
         </tr>
       </thead>
       <tbody>
-
         <% game.comments.forEach(function(comment) { %>
-
           <tr>
             <td><%= comment.createdAt.toLocaleDateString() %></td>
             <td><%= comment.content %></td>
-						<td>
+            <td>
               <form action="/games/<%= game._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
                 <button id="edit-trash-btn"><i class="fas fa-trash fa-S"></i></button>
               </form>
@@ -73,9 +64,7 @@ sizes="32x32"></link>
         <% }) %>
         <tr>
           <td colspan="2"></td>
-          <td>
-
-          </td>
+          <td></td>
         </tr>
       </tbody>
     </table>
@@ -83,15 +72,13 @@ sizes="32x32"></link>
     <h3>No Comments Yet</h3>
   <% } %>
   <form class="comment-area"
-  id="add-comment-form"
-  action="/games/<%= game._id %>/comments"
-  method="POST"
->
-  <label for="content-textarea">Comments:</label>
-  <textarea name="content" id="content-textarea"></textarea>
-  <button id="comment-btn" type="submit">Add Comment</button>
-  
-</form>
+    id="add-comment-form"
+    action="/games/<%= game._id %>/comments"
+    method="POST"
+  >
+    <label for="content-textarea">Comments:</label>
+    <textarea name="content" id="content-textarea"></textarea>
+    <button id="comment-btn" type="submit">Add Comment</button>
+  </form>
 </main>
-  
 <%- include('../partials/footer') %>

@@ -5,49 +5,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav2') %>
 <section>
-  
   <% if (user) { %>
     <div class ="nav-text">
-<h1 id="profile-text"><%= user.profile.name %>'s Account</h1>
-</div>
-
+      <h1 id="profile-text"><%= user.profile.name %>'s Account</h1>
+    </div>
   <% } %>
-
 </section>
 <main>
   <h1>Your collection:</h1>
-  <p class="num-list">You have <%= games.length %> game(s) in your collection <i <i class="fas fa-gamepad fa-xs"></i></p>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Title:</th>
-      <th>Completed</th>
-      <th> </th>
-      <th>Details:</th>
-    </tr>
-  </thead>
-  <tbody>
-  <% games.forEach(game => { %>
-  <tr>
-    <div id="list-border">
-    <td><%= game.title %></td>
-    <td> <%= game.completed ? 'Yes' : 'No' %></td>
-    <td>
-      <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-      <button id="trash-index" type="submit"><i class="fas fa-trash fa-xs"></i></button>
-  
-    </form>
-    </div>
-
-      </td>
-      </div>
-    <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
-
-    </tr>
-  <% }) %>
-  
-  </tbody>
-</table>
+  <p class="num-list">You have <%= games.length %> game(s) in your collection <i class="fas fa-gamepad fa-xs"></i></p>
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Title:</th>
+        <th>Completed</th>
+        <th></th>
+        <th>Details:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% games.forEach(game => { %>
+        <tr>
+          <div id="list-border">
+            <td><%= game.title %></td>
+            <td> <%= game.completed ? 'Yes' : 'No' %></td>
+            <td>
+              <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+                <button id="trash-index" type="submit"><i class="fas fa-trash fa-xs"></i></button>
+              </form>
+            </td>
+            <td><a id="details-btn" href="/games/<%= game._id %>">Details</a></td>
+          </div>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
 </main>
-
 <%- include('../partials/footer') %>

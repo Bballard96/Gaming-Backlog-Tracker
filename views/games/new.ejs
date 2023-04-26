@@ -11,7 +11,6 @@ sizes="32x32"></link>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
-
 <main>
   <h1><%= title %></h1>
   <form id="new-form" action="/games" method="POST">
@@ -19,16 +18,15 @@ sizes="32x32"></link>
     <input type="text" name="title" id="title-input" autocomplete="off" placeholder='Ex: "Skyrim"'>
     <label for="hours-played-input"><strong>Time played:</strong></label>
     <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off" placeholder='Ex: "3 hours"'>
-
     <label for="esrb-rating-select"><strong>ESRB Rating:</strong></label>
-    <select name="esrbRating" id="esrb-rating-select" >
+    <select name="esrbRating" id="esrb-rating-select">
       <option value="E">E</option>
       <option value="T">T</option>
       <option value="M">M</option>
       <option value="AO">AO</option>
     </select>
     <label for="genre-select"><strong>Genre:</strong></label>
-    <select name="genre" id="genre-select" >
+    <select name="genre" id="genre-select">
       <option value="Action">Action</option>
       <option value="Platform">Platform</option>
       <option value="Shooter">Shooter</option>
@@ -46,12 +44,9 @@ sizes="32x32"></link>
       <option value="Card">Card</option>
       <option value="Battle Royale">Battle Royale</option>
     </select>
-
     <label for="completed-checkbox"><strong>Completed:</strong></label>
     <input type="checkbox" name="completed" id="completed-checkbox">
-
-    <button id="game-btn"  class="submit-btn" type="submit" >Add Game <i <i class="fas fa-gamepad fa-xs"></i></button>
+    <button id="game-btn" class="submit-btn" type="submit">Add Game <i class="fas fa-gamepad fa-xs"></i></button>
   </form>
 </main>
-
 <%- include("../partials/footer") %>

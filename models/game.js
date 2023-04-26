@@ -8,7 +8,6 @@ const commentSchema = new Schema({
   timestamps: true
 })
 
-
 const gameSchema = new Schema({
   title: {
     type: String, required: true
@@ -20,7 +19,6 @@ const gameSchema = new Schema({
   comments: [commentSchema],
   owner: { type: Schema.Types.ObjectId, ref: 'Profile' },
 })
-
 
 const Game = mongoose.model('Game', gameSchema)
 

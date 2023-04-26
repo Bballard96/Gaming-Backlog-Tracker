@@ -2,7 +2,6 @@
 
 import { Game } from "../models/game.js";
 
-
 function newGame(req, res) {
   res.render('games/new', {
     title: 'Create Game'
@@ -124,7 +123,6 @@ function createComment(req, res) {
   })
 }
 
-
 function deleteComment(req, res) {
   Game.findById(req.params.gameId)
   .then(game => {
@@ -144,17 +142,6 @@ function deleteComment(req, res) {
   })
 }
 
-
-
-
-
-
-
-
-
-
-
-
 export {
   newGame as new,
   index,
@@ -166,5 +153,4 @@ export {
   createComment,
   deleteComment,
   newIndex
-  
 }

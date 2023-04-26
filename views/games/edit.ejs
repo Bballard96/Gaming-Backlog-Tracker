@@ -4,14 +4,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
 <%- include('../partials/nav') %>
-
 <main>
   <h1><%= title %></h1>
-
-
-    <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
-
-
+  <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
     <label for="title-input">Title:</label>
     <input type="text" name="title" id="title-input" value="<%= game.title %>"> 
     <label for="hours-played-input">Time played:</label>
@@ -44,7 +39,6 @@
       <option value="Card">Card</option>
       <option value="Battle Royale">Battle Royale</option>
     </select>
-    
     <label for="completed-checkbox">Completed:</label>
     <input 
       type="checkbox"
@@ -52,9 +46,7 @@
       id="completed-checkbox"
       <%= game.completed ? "checked" : "" %>
     >
-
     <button id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>
 </main>
-
 <%- include("../partials/footer") %>
