@@ -24,6 +24,8 @@
 - #### Mongo DB
 - #### Mongoose
 - #### EJS
+- #### Express
+- #### Google OAuth
 
 
 ## Next steps: 
