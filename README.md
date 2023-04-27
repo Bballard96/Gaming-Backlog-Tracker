@@ -31,8 +31,8 @@
 
 
 ## Next steps: 
+
 - ### Add another page with a list titled "Completed games' that will hold the games you have already finished separately from your collection of games.
 - ### Have cover images associated with each game.
 - ### Have a "Recommended' section that gives recommendations of other games based on your most played genres.
 - ### Add a feature that allows each user to compare their profile with others.
-- ### Add responsive Web design to help with mobile browser scaling.

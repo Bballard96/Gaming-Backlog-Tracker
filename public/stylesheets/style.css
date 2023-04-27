@@ -1,9 +1,8 @@
 html {
   box-sizing: border-box;
 }
-
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
+*, 
+*::before, 
 *::after {
   box-sizing: inherit;
 }
