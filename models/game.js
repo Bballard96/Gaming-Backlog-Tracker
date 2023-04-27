@@ -13,9 +13,9 @@ const gameSchema = new Schema({
     type: String, required: true
   },
   platform: {type: String,},
-  hoursPlayed: { type: String},
+  hoursPlayed: { type: Number, min: 0 },
   esrbRating: {type: String, enum: ['E', 'T', 'M', 'AO']},
-  genre: {type: String, enum: ['Action', 'Platform', 'Shooter', 'Fighting', 'Survival', 'MMO', 'Horror', 'Visual Novel', 'Puzzle', 'RPG', 'Sim', 'Racing', 'Adventure', 'Sports', 'Card', 'Battle Royale']},
+  genre: {type: String, enum: ['Action', 'Platform', 'Shooter', 'Fighting', 'Survival', 'MMO', 'Horror', 'Visual Novel', 'Puzzle', 'RPG', 'Sim', 'Racing', 'Adventure', 'Sports', 'Card', 'Battle Royale', 'Dance']},
   completed: {type: Boolean},
   comments: [commentSchema],
   owner: { type: Schema.Types.ObjectId, ref: 'Profile' },

@@ -8,11 +8,11 @@
   <h1><%= title %></h1>
   <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
     <label for="title-input">Title:</label>
-    <input type="text" name="title" id="title-input" value="<%= game.title %>"> 
+    <input type="text" name="title" id="title-input" autocomplete="off" value="<%= game.title %>"> 
     <label for="platform-input">Platform:</label>
-    <input type="text" name="platform" id="platform-input" value="<%= game.platform %>"> 
-    <label for="hours-played-input">Time played:</label>
-    <input type="text" name="hoursPlayed" id="hours-played-input" value="<%= game.hoursPlayed %>">
+    <input type="text" name="platform" autocomplete="off" id="platform-input" value="<%= game.platform %>"> 
+    <label for="hours-played-input">Hours played:</label>
+    <input type="text" name="hoursPlayed" id="hours-played-input" autocomplete="off" value="<%= game.hoursPlayed %>">
     <label for="esrb-rating-select">ESRB Rating:</label>
     <select style="cursor: pointer;" name="esrbRating" id="esrb-rating-select" >
       <option value="<%= game.esrbRating %>"><%= game.esrbRating %></option>
@@ -40,6 +40,7 @@
       <option value="Sports">Sports</option>
       <option value="Card">Card</option>
       <option value="Battle Royale">Battle Royale</option>
+      <option value="Dance">Dance</option>
     </select>
     <label for="completed-checkbox">Completed:</label>
     <input style="cursor: pointer;" 

@@ -23,11 +23,11 @@
 * HTML 
 * Mongo DB
 * Node
-*  Mongoose
+* Mongoose
 * EJS
 * Express
 * Google OAuth
-*  Docker
+* Docker
 
 
 ## Next steps: 
@@ -35,3 +35,4 @@
 - ### Have cover images associated with each game.
 - ### Have a "Recommended' section that gives recommendations of other games based on your most played genres.
 - ### Add a feature that allows each user to compare their profile with others.
+- ### Add responsive Web design to help with mobile browser scaling.

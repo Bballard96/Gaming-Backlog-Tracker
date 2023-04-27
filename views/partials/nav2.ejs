@@ -1,44 +1,33 @@
 <% if (!user) { %>
   <script defer src="https://accounts.google.com/gsi/client"></script>
-  <link
-  id="favicon"
-  rel="icon"
-  
-  href="/stylesheets/images/736540.png"
-  type="image/png"
-  sizes="32x32"></link>
+  <link id="favicon" rel="icon" href="/stylesheets/images/736540.png" type="image/png" sizes="32x32"></link>
 <% } %>
 </head>
 <body>
   <nav>
     <% if (user) { %>
-      <a  id="collect-btn"
-      href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>
-  >
-  <div id="collect-text">
-  🎮 Add game 
-  </div>
+      <a id="collect-btn" href="/games/new" class=<%= title === 'Create game' ? 'active' : '' %>>
+        <div id="collect-text">
+          🎮 Add game 
+        </div>
       </a>
-<a  href="/auth/logout" >
-  <button style="cursor: pointer;" class="log-btn" type="submit">Logout <i class="fas fa-user fa-xs"></i></button>
-</a>
-
-  <% } else { %>
-    <div 
-      id="g_id_onload"
-      data-client_id="<%= googleClientID %>"
-      data-login_uri="/auth/google"
-      data-auto_prompt="false"
-      data-prompt_parent_id="g_id_onload"
-    ></div>
-    <div 
-      class="g_id_signin right"
-      data-type="standard"
-      data-size="large"
-      data-theme="outline"
-      data-text="sign_in_with"
-      data-shape="rectangular"
-      data-logo_alignment="left"
-    ></div>
-  <% } %>
+      <a href="/auth/logout">
+        <button style="cursor: pointer;" class="log-btn" type="submit">Logout <i class="fas fa-user fa-xs"></i></button>
+      </a>
+    <% } else { %>
+      <div id="g_id_onload"
+        data-client_id="<%= googleClientID %>"
+        data-login_uri="/auth/google"
+        data-auto_prompt="false"
+        data-prompt_parent_id="g_id_onload">
+      </div>
+      <div class="g_id_signin right"
+        data-type="standard"
+        data-size="large"
+        data-theme="outline"
+        data-text="sign_in_with"
+        data-shape="rectangular"
+        data-logo_alignment="left">
+      </div>
+    <% } %>
   </nav>
