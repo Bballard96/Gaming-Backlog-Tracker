@@ -234,9 +234,6 @@ table td {
   text-align: center;
 }
 
-table td {
-
-}
 
 #list td:nth-child(2),
 #list td:nth-child(3) {
@@ -299,4 +296,38 @@ h3{
   justify-content: center;
   text-align: center;
   margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 1px;
+    padding: 1px;
+    font-size: 15px;
+  }
+  main{
+    padding: 1px;
+    margin: 1px;
+  }
+div.title-quotes{
+  font-size: 12px;
+  position: relative;
+  left: 2%;
+  margin: 0;
+  padding: 3px;
+}
+footer{
+  position: relative;
+  lefT: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+a#add-btn{
+margin-left: -65px;
+}
+
 }

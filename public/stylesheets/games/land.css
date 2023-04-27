@@ -154,9 +154,7 @@ table td {
   padding: 33px;
 }
 
-table td {
 
-}
 
 #list td:nth-child(2),
 #list td:nth-child(3) {
@@ -256,23 +254,25 @@ color: orange;
 #trash-index:hover{
   color: orange;
 }
-/* 
-#details-btn {
-  font-family: "Raleway";
-  size: 20em; 
-  height: 1.7em;
-  width: 3em;
-  background: #444;
-  background: linear-gradient(top, #555, #333);
-  border: none;
-  border-top: 3px solid orange;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 1em;
-  transform-origin: 50% 5em;
-  border-bottom: none;
-}
 
-#details-btn:hover{
-  color: orange;
-} */
+@media (max-width: 600px) {
+  table {
+    width: 15px;
+    font-size: 12px;
+    margin: 5px;
+  }
+  nav {
+    height: 90px
+  }
+  table th{
+    column-gap: 20%;
+  }
+  table#list{
+    margin: 0;
+    padding: 0;
+  }
+  td{
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -270,3 +270,38 @@ color: orange;
 table.comment-table {
   padding-bottom: 5px;
 }
+@media (max-width: 600px) {
+  table {
+    width: 15px;
+    font-size: 12px;
+  }
+  nav {
+    height: 100px;
+    font-size: 18px;
+  }
+  form {
+    justify-content: center;
+    position: relative;
+    right: 20%;
+    font-size: 12px;
+  }
+  button#comment-btn{
+    height: 75px;
+  }
+  table.comment-table{
+margin-right: auto;
+  }
+  button#edit-trash-btn{
+    height: 50px;
+    margin-left: 15px;
+  }
+  button.edit{
+    margin-top: 1%;
+  }
+  h1{
+    margin: 0;
+  }
+  form#new-form{
+    margin-left: 40%;
+  }
+}
