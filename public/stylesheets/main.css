@@ -2,9 +2,9 @@ html {
   box-sizing: border-box
 }
 
-*, /* All elements*/
+*, 
 
-*::after { /* All ::after pseudo-elements */
+*::after { 
   box-sizing: inherit;
   font-family: "Raleway";
 }
