@@ -17,15 +17,6 @@ nav {
 }
 
 
-a#add-btn{
-  positon: relative;
-  left: 45.9%;
-}
-#add-btn {
-  animation: wiggle 2s linear;
-}
-
-
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -50,10 +41,6 @@ a#add-btn{
   }
 }
 
-body {
-  background: #000;
-  font-family: "Raleway";
-}
 
 #add-text{
   font-size: 16px;
@@ -64,6 +51,11 @@ body {
   text-decoration-line: none;
 }
 
+
+a#add-btn{
+  positon: relative;
+  left: 45.9%;
+}
 
 
 #add-btn {
@@ -81,6 +73,7 @@ body {
   font-size: 1em;
   transform-origin: 50% 5em;
   border-bottom: none;
+  animation: wiggle 2s linear;
 }
 
 #add-btn:link {
@@ -112,31 +105,83 @@ body {
 #details-btn {
   outline:auto;
   font-family: "Raleway";
-  /* background-color: #424748;
-  color: #424748; */
+  background-color: #424748;
+  color: #424748;
 }
 
-#pic1 {
-width: 70%;
-height: 50%;
-border-radius: 30%;
+.num-list {
+  font-size: 20px;
+  font-family: "Raleway";
 }
 
-#pic2 {
-  width: 50%;
-  height: 60%;
-border-radius: 30%;
-position: relative;
-left: 80px;
-}
 
-#pic3 {
-  width: 40%;
-  border-radius: 30%;
+.title-quotes {
+  display: flex;
+  justify-content: space-evenly; 
+  font-family: "Raleway";
+  font-size: 16px;
   position: relative;
-  left: 130px;
-  }
+  top: 230px;
+  color: black;
+  padding: 70px;
+  margin: 20px;
+  column-gap: 50px;
+  left: 50px;
 
+}
+
+.game-list {
+  font-size: 25px;
+  font-family: "Raleway";
+}
+
+
+a:hover {
+color: orange;
+}
+
+
+
+a.email {
+  font-size: 18px;
+  font-family: "Raleway";
+  padding: 5px;
+  cursor: pointer;
+}
+
+div.email-div{
+  padding-bottom: -40px;
+  margin-bottom: 1px;
+  justify-content: center;
+  text-align: center;
+}
+
+h3{
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+
+#profile-text {
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+}
+#collect-btn {
+  animation: wiggle 2s linear;
+}
+
+#details-btn {
+  outline: auto;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
 
 .num-list {
   font-size: 20px;
@@ -145,7 +190,7 @@ left: 80px;
 
 table {
   border-bottom: 2px solid black;
-  font-family: "Raleway";
+  padding: 2px;
 
 }
 tr:nth-child(even) {
@@ -180,29 +225,25 @@ background-color: orange;
 }
 
 
-
 .firstPic {
   size: 80%;
 }
 
+
 .title-quotes {
   display: flex;
-  justify-content: space-evenly; 
   font-family: "Raleway";
   font-size: 16px;
   position: relative;
-  top: 230px;
+  top: 180px;
   color: black;
-  padding: 70px;
+  padding: 25px;
   margin: 20px;
   column-gap: 50px;
-  left: 50px;
-
 }
 
 .game-list {
   font-size: 25px;
-  font-family: "Raleway";
 }
 
 body {
@@ -217,8 +258,10 @@ table {
   background-color: #F6F1E9;
   justify-content: center;
   text-align: center;
+  border-bottom: 2px solid black;
   font-family: "Raleway";
 }
+
 
 table thead th {
   padding: 5px;
@@ -229,7 +272,9 @@ table thead th {
 table td {
   padding: 10px;
   text-align: center;
+  padding: 33px;
 }
+
 
 
 #list td:nth-child(2),
@@ -255,47 +300,122 @@ table td {
 
 #list a:hover {
   background-color: white;
+  color: orange;
+  /* background-color: white; */
 }
+
+
+
+#list td:nth-child(2),
+#list td:nth-child(3) {
+  min-width: 100px;
+
+}
+
+#list a {
+  border-radius: 4px;
+  background-color: #d9dbdb;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #424748;
+
+}
+
 
 a:hover {
 color: orange;
 }
 
-
-footer{
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
   position: relative;
-  top: 280px;
-  left: 39%;
-  font-size: 23px;
-  font-family: 'Raleway';
-  color: black;
-  width: 400px;
-  /* padding: 1px; */
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
 
-a.email {
-  font-size: 18px;
+#trash-index {
   font-family: "Raleway";
-  padding: 5px;
-  cursor: pointer;
+  size: 20em; 
+  height: 1.7em;
+  width: 3em;
+  background: #444;
+  background: linear-gradient(top, #555, #333);
+  border: none;
+  border-top: 3px solid orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  transform-origin: 50% 5em;
+  border-bottom: none;
 }
 
-
-
-div.email-div{
-  padding-bottom: -40px;
-  margin-bottom: 1px;
-  justify-content: center;
-  text-align: center;
-}
-
-h3{
-  justify-content: center;
-  text-align: center;
-  margin-top: 15px;
+#trash-index:hover{
+  color: orange;
 }
 
 @media (max-width: 600px) {
+  table {
+    width: 15px;
+    font-size: 12px;
+    margin: 5px;
+  }
+  nav {
+    height: 90px
+  }
+  table th{
+    column-gap: 20%;
+  }
+  table#list{
+    margin: 0;
+    padding: 0;
+  }
+  td{
+    margin: 0;
+    padding: 0;
+  }
   body {
     margin: 1px;
     padding: 1px;

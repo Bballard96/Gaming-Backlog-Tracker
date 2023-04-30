@@ -5,6 +5,7 @@
 <body>
   <nav>
     <% if (user) { %>
+      <% if (title === "Home Page" || title === "All Games" || title === "Game Details" || title === "Edit Game") {%>
       <a id="collect-btn"
         href="/games/new"
         class=<%= title === 'Create game' ? 'active' : '' %>>
@@ -12,6 +13,8 @@
           🎮 Add game 
         </div>
       </a>
+      <% } %>
+      <% if (title === "Home Page" || title === "Create Game" || title === "Game Details" || title === "Edit Game") {%>
       <a id="add-btn"
       href="/games"
       class=<%= title === 'All games' ? 'active' : '' %>>
@@ -19,6 +22,8 @@
         🎮 My collection
       </div>
     </a>
+    <% } %>
+  
     
     <a href="/auth/logout">
       <button style="cursor: pointer;" class="log-btn" type="submit">Logout <i class="fas fa-user fa-xs"></i></button>
