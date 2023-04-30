@@ -17,7 +17,7 @@ nav {
 }
 
 #collect-btn {
-  animation: wiggle 2s linear infinite;
+  animation: wiggle 2s linear;
 }
 
 @keyframes wiggle {

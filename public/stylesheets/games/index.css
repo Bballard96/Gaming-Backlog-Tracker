@@ -22,7 +22,7 @@ a#add-btn{
   left: 45.9%;
 }
 #add-btn {
-  animation: wiggle 2s linear infinite;
+  animation: wiggle 2s linear;
 }
 
 

@@ -34,22 +34,6 @@ function index(req, res) {
   })
 }
 
-function newIndex(req, res) {
-  const profileID = req.user.profile.id 
-  Game.find({ owner: profileID})
-  Game.find({})
-  .then(games => {
-    res.render('games/completed', {
-      games: games,
-      title: "All Games"
-    })
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/')
-  })
-}
-
 function show(req, res) {
   Game.findById(req.params.gameId)
   .then(game => {
@@ -149,5 +133,4 @@ export {
   update,
   createComment,
   deleteComment,
-  newIndex
 }

@@ -6,8 +6,6 @@ const router = Router()
 
 router.get('/', isLoggedIn, gamesCtrl.index)
 
-router.get('/', isLoggedIn, gamesCtrl.newIndex)    
-
 router.get('/new', isLoggedIn, gamesCtrl.new)
 
 router.get('/:gameId', isLoggedIn, gamesCtrl.show)
