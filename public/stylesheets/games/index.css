@@ -53,8 +53,6 @@ nav {
 
 
 a#add-btn{
-  /* positon: relative;
-  left: 44.5%; */
   padding: 0 auto;
 }
 
@@ -429,7 +427,7 @@ footer{
   padding: 0;
 }
 a#add-btn{
-margin-left: -65px;
+padding: 0 auto;
 }
 
 }
