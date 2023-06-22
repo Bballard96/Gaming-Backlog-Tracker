@@ -4,6 +4,7 @@ import * as gamesCtrl from '../controllers/games.js'
 import { isLoggedIn } from '../middleware/middleware.js'
 
 const upload = multer({ dest: 'uploads/' });
+// const fs = require('fs')
 
 const router = Router()
 
@@ -20,10 +21,15 @@ router.post('/', isLoggedIn, gamesCtrl.create)
 
 // NEW CODE BELOW FOR PICTURE UPLOADS
 
-router.post('/upload', upload.single('image'), (req,res) => {
-  console.log(req.file)
-  res.send('File uploaded!')
-})
+// router.post('/upload', upload.single('image'), (req, res) => {
+// const tempPath = req.file.path
+// const targetPath = 'uploads/' + req.file.originalname
+
+// fs.rename(tempPath, targetPath, err => {
+//   if (err) throw err;
+//   res.send('File uploaded!')
+// })
+// })
 
 router.post('/:gameId/comments', isLoggedIn, gamesCtrl.createComment)
 
