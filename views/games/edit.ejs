@@ -46,6 +46,12 @@
       id="completed-checkbox"
       <%= game.completed ? "checked" : "" %>
     >
+    <!-- ADDING PICTURE FUNCTION -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*">
+      <input type="submit" value="Upload">
+    </form>
+    
     <button style="cursor: pointer;" id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>
 </main>
