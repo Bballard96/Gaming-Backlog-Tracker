@@ -36,3 +36,4 @@
 - ### Have cover images associated with each game.
 - ### Have a "Recommended" section that gives recommendations of other games based on your most played genres.
 - ### Add a feature that allows each user to compare their profile with others.
+- ### Add 'Demo' feature that allows user to not have to login to test out the app.
