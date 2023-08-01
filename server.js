@@ -25,6 +25,7 @@ import { router as gamesRouter } from './routes/games.js'
 const app = express()
 
 
+
 app.set('view engine', 'ejs')
 
 
