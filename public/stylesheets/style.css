@@ -40,6 +40,9 @@ main {
 
 
 .front-img {
-  width: 500px;
-  height: 100px;
+  /* align-items: center; */
+  right: 50%;
+  margin: auto;
+  width: 300px;
+  height: 300px;
 }
