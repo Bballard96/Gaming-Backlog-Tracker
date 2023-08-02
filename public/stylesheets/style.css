@@ -37,3 +37,9 @@ main {
 .right {
   margin-left: auto;
 }
+
+
+.front-img {
+  width: 500px;
+  height: 100px;
+}
