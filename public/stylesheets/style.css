@@ -15,6 +15,7 @@ body {
   color: #f6f6f6;
   font-family: "Raleway";
   margin: 0;
+  padding: 10px;
 }
 
 nav {
@@ -39,10 +40,4 @@ main {
 }
 
 
-.front-img {
-  /* align-items: center; */
-  right: 50%;
-  margin: auto;
-  width: 300px;
-  height: 300px;
-}
+
