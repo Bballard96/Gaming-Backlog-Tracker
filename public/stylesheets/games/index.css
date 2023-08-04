@@ -30,6 +30,11 @@ nav {
   margin-top: 30px;
 }
 
+.profile-img {
+  text-align: center;
+  align-items: center;
+}
+
 @keyframes wiggle {
   0%, 7% {
     transform: rotateZ(0);
@@ -65,14 +70,14 @@ nav {
 }
 
 
-a#add-btn{
+/* a#add-btn{
   padding: 0 auto;
-}
+} */
 
 
 #add-btn {
   position: absolute;
-  left: calc(50% - 3em);
+  left: calc(50% - 80px);
   top: calc(50% - 2em);
   height: 2.2em;
   width: 7em;
