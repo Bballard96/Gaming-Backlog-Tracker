@@ -76,6 +76,13 @@ app.use(function (err, req, res, next) {
   })
 })
 
+// app.get('/', (req, res) => {
+  
+//   const isLoggedIn = req.user ? true : false;
+
+//   res.render('/', { isLoggedIn })
+// })
+
 export { 
   app 
 }
