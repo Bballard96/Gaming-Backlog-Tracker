@@ -3,9 +3,12 @@
 <%- include('../partials/nav') %>
 <main>
   <h1><%= title %></h1>
-  <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST">
+  <form id="new-form" action="/games/<%= game._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
     <label for="title-input">Title:</label>
     <input type="text" name="title" id="title-input" autocomplete="off" value="<%= game.title %>"> 
+
+
+
     <label for="platform-input">Platform:</label>
     <input type="text" name="platform" autocomplete="off" id="platform-input" value="<%= game.platform %>"> 
     <label for="hours-played-input">Hours played:</label>
@@ -47,10 +50,13 @@
       <%= game.completed ? "checked" : "" %>
     >
     <!-- ADDING PICTURE FUNCTION -->
-    <form action="/upload" method="post" enctype="multipart/form-data">
+    <!-- <form action="/upload" method="post" enctype="multipart/form-data">
       <input type="file" name="image" accept="image/*">
       <input type="submit" value="Upload">
-    </form>
+    </form> -->
+        <!-- Image upload input  -->
+        <label for="image-input">Upload Image:</label>
+        <input type="file" name="gameImage" id="image-input" accept="image/">
     
     <button style="cursor: pointer;" id="save-btn" type="submit">Save changes<i class="fas fa-lock fa-xs"></i></button>
   </form>
