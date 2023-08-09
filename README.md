@@ -33,7 +33,7 @@
 ## Next steps: 
 
 - ### Add another page with a list titled "Completed games' that will hold the games you have already finished separately from your collection of games.
-- ### Have cover images associated with each game.
+- ### Add cover images for each video game title.
 - ### Have a "Recommended" section that gives recommendations of other games based on your most played genres.
 - ### Add a feature that allows each user to compare their profile with others.
 - ### Add 'Demo' feature that allows user to not have to login to test out the app.
