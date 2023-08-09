@@ -21,6 +21,14 @@
       </tr>
     </thead>
     <tbody>
+      <% if (games.length === 0 ) { %>
+        <tr>
+          <td colspan="4" style="text-align: center;">
+          Add a game here by clicking "Add game" at the top.
+          </td>
+        </tr>
+        <% } %>
+
       <% games.forEach(game => { %>
         <tr>
           <div id="list-border">
