@@ -33,6 +33,10 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+}
+
+#collection-main {
   margin-top: 40px;
 }
 
