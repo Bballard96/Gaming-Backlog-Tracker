@@ -24,6 +24,7 @@ import { router as gamesRouter } from './routes/games.js'
 
 const app = express()
 
+// connectDB() testing with this line of code 
 
 
 app.set('view engine', 'ejs')
